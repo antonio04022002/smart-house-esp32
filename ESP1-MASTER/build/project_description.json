@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "proyecto_final",
-    "project_version":    "002725e-dirty",
+    "project_version":    "c910bd4-dirty",
     "project_path":       "C:/Users/anton/practicas_micros/proyecto_final/ESP1-MASTER",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.2-2",
     "build_dir":          "C:/Users/anton/practicas_micros/proyecto_final/ESP1-MASTER/build",
