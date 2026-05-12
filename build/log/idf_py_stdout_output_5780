@@ -1,0 +1,120 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\anton\practicas_micros\proyecto_final\build\proyecto_final.elf C:\Users\anton\practicas_micros\proyecto_final\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2026 23:31:52[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1df20h (122656) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002df48 vaddr=3ffb0000 size=020d0h (  8400) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8f940h (588096) map[0m
+[0;32mI (334) esp_image: segment 3: paddr=000bf968 vaddr=3ffb20d0 size=01e74h (  7796) load[0m
+[0;32mI (337) esp_image: segment 4: paddr=000c17e4 vaddr=40080000 size=1848ch ( 99468) load[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d9c78 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) cpu_start: Multicore app[0m
+[0;32mI (407) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (410) app_init: Application information:[0m
+[0;32mI (413) app_init: Project name:     proyecto_final[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     May 11 2026 23:31:34[0m
+[0;32mI (426) app_init: ELF file SHA256:  e3378e1d9...[0m
+[0;32mI (431) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (454) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (459) heap_init: At 3FFBC180 len 00023E80 (143 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 4009848C len 00007B74 (30 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (484) spi_flash: flash io: dio[0m
+[0;33mW (487) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (510) main_task: Calling app_main()[0m
+[0;32mI (540) wifi:wifi driver task: 3ffc4404, prio:23, stack:6656, core=0[0m
+[0;32mI (550) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (550) wifi:wifi certification version: v7.0[0m
+[0;32mI (550) wifi:config NVS flash: enabled[0m
+[0;32mI (550) wifi:config nano formatting: disabled[0m
+[0;32mI (550) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (560) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (560) wifi:Init management short buffer num: 32[0m
+[0;32mI (570) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (570) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (570) wifi:Init static rx buffer num: 10[0m
+[0;32mI (580) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (580) wifi_init: rx ba win: 6[0m
+[0;32mI (580) wifi_init: accept mbox: 6[0m
+[0;32mI (590) wifi_init: tcpip mbox: 32[0m
+[0;32mI (590) wifi_init: udp mbox: 6[0m
+[0;32mI (590) wifi_init: tcp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp tx win: 5760[0m
+[0;32mI (600) wifi_init: tcp rx win: 5760[0m
+[0;32mI (600) wifi_init: tcp mss: 1440[0m
+[0;32mI (600) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (610) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (620) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (690) wifi:mode : sta (94:51:dc:2d:86:d8) + softAP (94:51:dc:2d:86:d9)[0m
+[0;32mI (690) wifi:enable tsf[0m
+[0;32mI (700) wifi:Total power save buffer number: 16[0m
+[0;32mI (700) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (700) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (710) ESP1_MASTER: WiFi creado[0m
+[0;32mI (710) ESP1_MASTER: SSID: SMART_HOME[0m
+[0;32mI (710) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (720) ESP1_MASTER: PASS: 12345678[0m
+[0;32mI (720) ESP1_MASTER: IP: 192.168.4.1[0m
+[0;32mI (730) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (730) ESP1_MASTER: ESP-NOW listo[0m
+[0;32mI (740) ESP1_MASTER: Servidor web iniciado[0m
+[0;33mW (740) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (740) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (750) i2c.master: I2C hardware timeout detected[0m
+[1;31mE (750) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up[0m
+[0;33mW (760) ESP1_MASTER: OLED no responde en 0x3C: ESP_ERR_TIMEOUT[0m
+[0;32mI (770) ESP1_MASTER: ESP1 maestro listo[0m
+[0;32mI (770) main_task: Returned from app_main()[0m
+[0;32mI (14190) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14190) wifi:station: fe:74:68:d7:16:f8 join, AID=1, bgn, 20[0m
+[0;32mI (14440) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (15400) wifi:<ba-add>idx:2 (ifx:1, fe:74:68:d7:16:f8), tid:0, ssn:2, winSize:64[0m
+[0;32mI (19630) wifi:<ba-add>idx:3 (ifx:1, fe:74:68:d7:16:f8), tid:1, ssn:0, winSize:64[0m
+[0;32mI (19650) wifi:<ba-add>idx:4 (ifx:1, fe:74:68:d7:16:f8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (30650) wifi:station: fe:74:68:d7:16:f8 leave, AID = 1, reason = 8, bss_flags is 691299, bss:0x3ffbd534[0m
+[0;32mI (30650) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30660) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (30660) wifi:<ba-del>idx:3, tid:1[0m
+[0;32mI (30660) wifi:<ba-del>idx:4, tid:5[0m
+[0;32mI (30680) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30900) wifi:new:<1,0>, old:<1,1>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30900) wifi:station: fe:74:68:d7:16:f8 join, AID=1, bgn, 20[0m
+[0;32mI (31020) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (31480) wifi:<ba-add>idx:2 (ifx:1, fe:74:68:d7:16:f8), tid:0, ssn:2, winSize:64[0m
+[0;33mW (33460) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (33460) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (34490) wifi:<ba-add>idx:3 (ifx:1, fe:74:68:d7:16:f8), tid:5, ssn:0, winSize:64[0m
+[0;32mI (36190) wifi:<ba-add>idx:4 (ifx:1, fe:74:68:d7:16:f8), tid:1, ssn:0, winSize:64[0m

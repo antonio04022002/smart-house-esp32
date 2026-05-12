@@ -1,0 +1,1767 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\anton\practicas_micros\proyecto_final\build\proyecto_final.elf C:\Users\anton\practicas_micros\proyecto_final\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2026 23:31:52[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e080h (123008) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002e0a8 vaddr=3ffb0000 size=01f70h (  8048) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8fa58h (588376) map[0m
+[0;32mI (334) esp_image: segment 3: paddr=000bfa80 vaddr=3ffb1f70 size=01fd4h (  8148) load[0m
+[0;32mI (337) esp_image: segment 4: paddr=000c1a5c vaddr=40080000 size=1848ch ( 99468) load[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d9ef0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) cpu_start: Multicore app[0m
+[0;32mI (408) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (410) app_init: Application information:[0m
+[0;32mI (414) app_init: Project name:     proyecto_final[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (422) app_init: Compile time:     May 11 2026 23:31:34[0m
+[0;32mI (427) app_init: ELF file SHA256:  07588e59d...[0m
+[0;32mI (431) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (436) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (440) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (444) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (448) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (454) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (459) heap_init: At 3FFBC180 len 00023E80 (143 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 4009848C len 00007B74 (30 KiB): IRAM[0m
+[0;32mI (482) spi_flash: detected chip: generic[0m
+[0;32mI (484) spi_flash: flash io: dio[0m
+[0;33mW (487) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (510) main_task: Calling app_main()[0m
+[0;32mI (540) wifi:wifi driver task: 3ffc4404, prio:23, stack:6656, core=0[0m
+[0;32mI (560) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (560) wifi:wifi certification version: v7.0[0m
+[0;32mI (560) wifi:config NVS flash: enabled[0m
+[0;32mI (560) wifi:config nano formatting: disabled[0m
+[0;32mI (560) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (570) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (570) wifi:Init management short buffer num: 32[0m
+[0;32mI (570) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (580) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (580) wifi:Init static rx buffer num: 10[0m
+[0;32mI (590) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (590) wifi_init: rx ba win: 6[0m
+[0;32mI (590) wifi_init: accept mbox: 6[0m
+[0;32mI (600) wifi_init: tcpip mbox: 32[0m
+[0;32mI (600) wifi_init: udp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp tx win: 5760[0m
+[0;32mI (610) wifi_init: tcp rx win: 5760[0m
+[0;32mI (610) wifi_init: tcp mss: 1440[0m
+[0;32mI (610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (620) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (630) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (700) wifi:mode : sta (94:51:dc:2d:86:d8) + softAP (94:51:dc:2d:86:d9)[0m
+[0;32mI (700) wifi:enable tsf[0m
+[0;32mI (710) wifi:Total power save buffer number: 16[0m
+[0;32mI (710) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (710) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (720) ESP1_MASTER: WiFi creado[0m
+[0;32mI (720) ESP1_MASTER: SSID: SMART_HOME[0m
+[0;32mI (720) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (730) ESP1_MASTER: PASS: 12345678[0m
+[0;32mI (730) ESP1_MASTER: IP: 192.168.4.1[0m
+[0;32mI (730) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (740) ESP1_MASTER: ESP-NOW listo[0m
+[0;32mI (740) ESP1_MASTER: Servidor web iniciado[0m
+[1;31mE (750) i2c.master: I2C software timeout[0m
+[0;33mW (750) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (750) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (760) i2c.master: I2C software timeout[0m
+[1;31mE (760) i2c.master: I2C software timeout[0m
+[0;33mW (770) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (770) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (780) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (790) wifi:station: fe:74:68:d7:16:f8 join, AID=1, bgn, 20[0m
+[1;31mE (800) i2c.master: I2C software timeout[0m
+[0;33mW (800) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (800) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (810) i2c.master: I2C software timeout[0m
+[0;33mW (810) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (820) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (820) i2c.master: I2C software timeout[0m
+[0;33mW (830) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (830) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (840) i2c.master: I2C software timeout[0m
+[0;33mW (840) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (850) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (860) i2c.master: I2C software timeout[0m
+[0;33mW (860) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (870) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (870) i2c.master: I2C software timeout[0m
+[0;33mW (880) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (880) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (890) i2c.master: I2C software timeout[0m
+[0;33mW (890) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (900) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (900) i2c.master: I2C software timeout[0m
+[0;33mW (910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (910) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (920) i2c.master: I2C software timeout[0m
+[0;33mW (920) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (930) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (940) i2c.master: I2C software timeout[0m
+[0;33mW (940) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (950) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (950) i2c.master: I2C software timeout[0m
+[0;33mW (960) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (960) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (970) i2c.master: I2C software timeout[0m
+[0;33mW (970) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (980) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (980) i2c.master: I2C software timeout[0m
+[0;33mW (990) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (990) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1000) i2c.master: I2C software timeout[0m
+[0;32mI (1000) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (1010) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1020) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1020) i2c.master: I2C software timeout[0m
+[0;33mW (1030) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1030) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1040) i2c.master: I2C software timeout[0m
+[1;31mE (1040) i2c.master: I2C software timeout[0m
+[0;33mW (1050) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1050) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1060) i2c.master: I2C software timeout[0m
+[1;31mE (1060) i2c.master: I2C software timeout[0m
+[0;33mW (1070) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1070) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1080) i2c.master: I2C software timeout[0m
+[1;31mE (1080) i2c.master: I2C software timeout[0m
+[0;33mW (1090) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1090) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1100) i2c.master: I2C software timeout[0m
+[1;31mE (1100) i2c.master: I2C software timeout[0m
+[0;33mW (1110) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1110) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1120) i2c.master: I2C software timeout[0m
+[0;33mW (1140) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1140) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1140) i2c.master: I2C software timeout[0m
+[0;33mW (1140) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1150) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1150) i2c.master: I2C software timeout[0m
+[0;33mW (1160) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1160) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1170) i2c.master: I2C software timeout[0m
+[0;33mW (1170) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1180) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1190) i2c.master: I2C software timeout[0m
+[0;32mI (1190) ESP1_MASTER: OLED activa[0m
+[0;33mW (1190) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1200) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1210) i2c.master: I2C software timeout[0m
+[0;32mI (1230) ESP1_MASTER: Recibido PANEL=3681[0m
+[0;33mW (1230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1230) i2c.master: I2C software timeout[0m
+[1;31mE (1230) i2c.master: I2C software timeout[0m
+[0;33mW (1240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1250) i2c.master: I2C software timeout[0m
+[0;33mW (1250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1270) i2c.master: I2C software timeout[0m
+[0;33mW (1270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1280) i2c.master: I2C software timeout[0m
+[0;32mI (1290) ESP1_MASTER: ESP1 maestro listo[0m
+[0;32mI (1290) main_task: Returned from app_main()[0m
+[0;32mI (1330) wifi:<ba-add>idx:2 (ifx:1, fe:74:68:d7:16:f8), tid:0, ssn:2, winSize:64[0m
+[0;32mI (2230) ESP1_MASTER: Recibido PANEL=3007[0m
+[0;33mW (2230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2230) i2c.master: I2C software timeout[0m
+[0;33mW (2260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2260) i2c.master: I2C software timeout[0m
+[1;31mE (2260) i2c.master: I2C software timeout[0m
+[0;33mW (2260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2280) i2c.master: I2C software timeout[0m
+[0;33mW (2280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2290) i2c.master: I2C software timeout[0m
+[0;32mI (3240) ESP1_MASTER: Recibido PANEL=2864[0m
+[0;33mW (3240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3240) i2c.master: I2C software timeout[0m
+[0;33mW (3270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3270) i2c.master: I2C software timeout[0m
+[1;31mE (3270) i2c.master: I2C software timeout[0m
+[0;33mW (3270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3290) i2c.master: I2C software timeout[0m
+[0;33mW (3290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3300) i2c.master: I2C software timeout[0m
+[0;32mI (4230) ESP1_MASTER: Recibido PANEL=2795[0m
+[0;33mW (4230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4230) i2c.master: I2C software timeout[0m
+[0;33mW (4260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4260) i2c.master: I2C software timeout[0m
+[1;31mE (4260) i2c.master: I2C software timeout[0m
+[0;33mW (4260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4280) i2c.master: I2C software timeout[0m
+[0;33mW (4280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4290) i2c.master: I2C software timeout[0m
+[0;32mI (5220) ESP1_MASTER: URI recibida: /close[0m
+[0;32mI (5220) ESP1_MASTER: Enviado a ESP-NOW: PUERTA=0[0m
+[0;33mW (5220) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (5230) ESP1_MASTER: Recibido PANEL=2761[0m
+[1;31mE (5230) i2c.master: I2C software timeout[0m
+[0;33mW (5260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5260) i2c.master: I2C software timeout[0m
+[1;31mE (5260) i2c.master: I2C software timeout[0m
+[0;33mW (5260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5280) i2c.master: I2C software timeout[0m
+[0;33mW (5280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5290) i2c.master: I2C software timeout[0m
+[0;32mI (6240) ESP1_MASTER: Recibido PANEL=2595[0m
+[0;33mW (6240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6250) i2c.master: I2C software timeout[0m
+[0;33mW (6270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6270) i2c.master: I2C software timeout[0m
+[1;31mE (6270) i2c.master: I2C software timeout[0m
+[0;33mW (6270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6290) i2c.master: I2C software timeout[0m
+[0;33mW (6290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6300) i2c.master: I2C software timeout[0m
+[0;32mI (6950) ESP1_MASTER: URI recibida: /open[0m
+[0;32mI (6950) ESP1_MASTER: Enviado a ESP-NOW: PUERTA=1[0m
+[0;33mW (6950) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6950) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6960) i2c.master: I2C software timeout[0m
+[0;33mW (6980) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6980) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6980) i2c.master: I2C software timeout[0m
+[1;31mE (6980) i2c.master: I2C software timeout[0m
+[0;33mW (6980) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6990) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7000) i2c.master: I2C software timeout[0m
+[0;33mW (7000) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7010) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7010) i2c.master: I2C software timeout[0m
+[0;32mI (7230) ESP1_MASTER: Recibido PANEL=2196[0m
+[0;33mW (7230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7230) i2c.master: I2C software timeout[0m
+[0;33mW (7260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7260) i2c.master: I2C software timeout[0m
+[1;31mE (7260) i2c.master: I2C software timeout[0m
+[0;33mW (7260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7280) i2c.master: I2C software timeout[0m
+[0;33mW (7280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7290) i2c.master: I2C software timeout[0m
+[0;32mI (8160) ESP1_MASTER: URI recibida: /close[0m
+[0;32mI (8170) ESP1_MASTER: Enviado a ESP-NOW: PUERTA=0[0m
+[0;33mW (8170) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8170) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8170) i2c.master: I2C software timeout[0m
+[0;33mW (8200) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8200) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8200) i2c.master: I2C software timeout[0m
+[1;31mE (8200) i2c.master: I2C software timeout[0m
+[0;33mW (8200) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8210) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8220) i2c.master: I2C software timeout[0m
+[0;33mW (8220) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;32mI (8230) ESP1_MASTER: Recibido PANEL=1809[0m
+[0;33mW (8230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8240) i2c.master: I2C software timeout[0m
+[1;31mE (8250) i2c.master: I2C software timeout[0m
+[0;33mW (8250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8260) i2c.master: I2C software timeout[0m
+[0;33mW (8260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8270) i2c.master: I2C software timeout[0m
+[0;33mW (8280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8290) i2c.master: I2C software timeout[0m
+[0;32mI (9230) ESP1_MASTER: Recibido PANEL=1535[0m
+[0;33mW (9230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9230) i2c.master: I2C software timeout[0m
+[0;33mW (9250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9250) i2c.master: I2C software timeout[0m
+[1;31mE (9250) i2c.master: I2C software timeout[0m
+[0;33mW (9250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9270) i2c.master: I2C software timeout[0m
+[0;33mW (9270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9280) i2c.master: I2C software timeout[0m
+[0;32mI (10230) ESP1_MASTER: Recibido PANEL=1383[0m
+[0;33mW (10230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10230) i2c.master: I2C software timeout[0m
+[0;33mW (10260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10260) i2c.master: I2C software timeout[0m
+[1;31mE (10260) i2c.master: I2C software timeout[0m
+[0;33mW (10260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10280) i2c.master: I2C software timeout[0m
+[0;33mW (10280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10290) i2c.master: I2C software timeout[0m
+[0;32mI (10380) ESP1_MASTER: URI recibida: /allon[0m
+[0;32mI (10390) ESP1_MASTER: Enviado a ESP-NOW: LUCES=1[0m
+[0;33mW (10390) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10390) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10400) i2c.master: I2C software timeout[0m
+[0;33mW (10420) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10420) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10420) i2c.master: I2C software timeout[0m
+[1;31mE (10420) i2c.master: I2C software timeout[0m
+[0;33mW (10430) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10430) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10440) i2c.master: I2C software timeout[0m
+[0;33mW (10440) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10450) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10450) i2c.master: I2C software timeout[0m
+[0;32mI (11230) ESP1_MASTER: Recibido PANEL=1127[0m
+[0;33mW (11230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11230) i2c.master: I2C software timeout[0m
+[0;33mW (11260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11260) i2c.master: I2C software timeout[0m
+[1;31mE (11260) i2c.master: I2C software timeout[0m
+[0;33mW (11260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11280) i2c.master: I2C software timeout[0m
+[1;31mE (11280) i2c.master: I2C software timeout[0m
+[0;32mI (12230) ESP1_MASTER: Recibido PANEL=1387[0m
+[0;33mW (12230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12230) i2c.master: I2C software timeout[0m
+[0;33mW (12250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12250) i2c.master: I2C software timeout[0m
+[1;31mE (12250) i2c.master: I2C software timeout[0m
+[0;33mW (12260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12270) i2c.master: I2C software timeout[0m
+[0;33mW (12270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12280) i2c.master: I2C software timeout[0m
+[0;32mI (13230) ESP1_MASTER: Recibido PANEL=1243[0m
+[0;33mW (13230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13230) i2c.master: I2C software timeout[0m
+[1;31mE (13260) i2c.master: I2C software timeout[0m
+[0;33mW (13260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13260) i2c.master: I2C software timeout[0m
+[0;33mW (13260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13280) i2c.master: I2C software timeout[0m
+[0;33mW (13280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13290) i2c.master: I2C software timeout[0m
+[0;32mI (14230) ESP1_MASTER: Recibido PANEL=1536[0m
+[0;33mW (14230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14240) i2c.master: I2C software timeout[0m
+[0;33mW (14260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14260) i2c.master: I2C software timeout[0m
+[1;31mE (14260) i2c.master: I2C software timeout[0m
+[0;33mW (14270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14280) i2c.master: I2C software timeout[0m
+[1;31mE (14280) i2c.master: I2C software timeout[0m
+[0;32mI (15240) ESP1_MASTER: Recibido PANEL=1808[0m
+[0;33mW (15240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15240) i2c.master: I2C software timeout[0m
+[0;33mW (15270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15270) i2c.master: I2C software timeout[0m
+[1;31mE (15270) i2c.master: I2C software timeout[0m
+[0;33mW (15270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15290) i2c.master: I2C software timeout[0m
+[1;31mE (15290) i2c.master: I2C software timeout[0m
+[0;32mI (16230) ESP1_MASTER: Recibido PANEL=1903[0m
+[0;33mW (16230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16230) i2c.master: I2C software timeout[0m
+[0;33mW (16250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16250) i2c.master: I2C software timeout[0m
+[1;31mE (16250) i2c.master: I2C software timeout[0m
+[0;33mW (16260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16270) i2c.master: I2C software timeout[0m
+[1;31mE (16270) i2c.master: I2C software timeout[0m
+[0;32mI (17230) ESP1_MASTER: Recibido PANEL=2106[0m
+[0;33mW (17230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17230) i2c.master: I2C software timeout[0m
+[0;33mW (17260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17260) i2c.master: I2C software timeout[0m
+[1;31mE (17260) i2c.master: I2C software timeout[0m
+[0;33mW (17260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17280) i2c.master: I2C software timeout[0m
+[1;31mE (17280) i2c.master: I2C software timeout[0m
+[0;32mI (18230) ESP1_MASTER: Recibido PANEL=2352[0m
+[0;33mW (18230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18230) i2c.master: I2C software timeout[0m
+[0;33mW (18260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18260) i2c.master: I2C software timeout[0m
+[1;31mE (18260) i2c.master: I2C software timeout[0m
+[0;33mW (18260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18280) i2c.master: I2C software timeout[0m
+[1;31mE (18280) i2c.master: I2C software timeout[0m
+[0;32mI (19230) ESP1_MASTER: Recibido PANEL=2549[0m
+[0;33mW (19230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19230) i2c.master: I2C software timeout[0m
+[0;33mW (19250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19250) i2c.master: I2C software timeout[0m
+[1;31mE (19250) i2c.master: I2C software timeout[0m
+[0;33mW (19260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19270) i2c.master: I2C software timeout[0m
+[1;31mE (19270) i2c.master: I2C software timeout[0m
+[0;32mI (20230) ESP1_MASTER: Recibido PANEL=3063[0m
+[0;33mW (20230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20230) i2c.master: I2C software timeout[0m
+[0;33mW (20260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20260) i2c.master: I2C software timeout[0m
+[1;31mE (20260) i2c.master: I2C software timeout[0m
+[0;33mW (20260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20280) i2c.master: I2C software timeout[0m
+[1;31mE (20280) i2c.master: I2C software timeout[0m
+[0;32mI (21230) ESP1_MASTER: Recibido PANEL=2925[0m
+[0;33mW (21230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21230) i2c.master: I2C software timeout[0m
+[0;33mW (21250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21250) i2c.master: I2C software timeout[0m
+[1;31mE (21250) i2c.master: I2C software timeout[0m
+[0;33mW (21260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21270) i2c.master: I2C software timeout[0m
+[1;31mE (21270) i2c.master: I2C software timeout[0m
+[0;32mI (22230) ESP1_MASTER: Recibido PANEL=3120[0m
+[0;33mW (22230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22230) i2c.master: I2C software timeout[0m
+[0;33mW (22260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22260) i2c.master: I2C software timeout[0m
+[1;31mE (22260) i2c.master: I2C software timeout[0m
+[0;33mW (22260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22280) i2c.master: I2C software timeout[0m
+[1;31mE (22280) i2c.master: I2C software timeout[0m
+[0;32mI (23230) ESP1_MASTER: Recibido PANEL=3029[0m
+[0;33mW (23230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23240) i2c.master: I2C software timeout[0m
+[0;33mW (23260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23260) i2c.master: I2C software timeout[0m
+[1;31mE (23260) i2c.master: I2C software timeout[0m
+[0;33mW (23260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23280) i2c.master: I2C software timeout[0m
+[1;31mE (23280) i2c.master: I2C software timeout[0m
+[0;32mI (23820) ESP1_MASTER: URI recibida: /brillo?val=32[0m
+[0;33mW (23830) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23830) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23830) i2c.master: I2C software timeout[0m
+[0;33mW (23850) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23850) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23850) i2c.master: I2C software timeout[0m
+[1;31mE (23850) i2c.master: I2C software timeout[0m
+[0;33mW (23860) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23860) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23870) i2c.master: I2C software timeout[0m
+[1;31mE (23870) i2c.master: I2C software timeout[0m
+[0;32mI (24240) ESP1_MASTER: Recibido PANEL=3086[0m
+[0;33mW (24240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24250) i2c.master: I2C software timeout[0m
+[0;33mW (24270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24270) i2c.master: I2C software timeout[0m
+[1;31mE (24270) i2c.master: I2C software timeout[0m
+[0;33mW (24270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24290) i2c.master: I2C software timeout[0m
+[1;31mE (24290) i2c.master: I2C software timeout[0m
+[0;32mI (25240) ESP1_MASTER: Recibido PANEL=2935[0m
+[0;33mW (25240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25240) i2c.master: I2C software timeout[0m
+[0;33mW (25270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25270) i2c.master: I2C software timeout[0m
+[1;31mE (25270) i2c.master: I2C software timeout[0m
+[0;33mW (25270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25290) i2c.master: I2C software timeout[0m
+[0;33mW (25290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25300) i2c.master: I2C software timeout[0m
+[0;32mI (26230) ESP1_MASTER: Recibido PANEL=2896[0m
+[0;33mW (26230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26230) i2c.master: I2C software timeout[0m
+[0;33mW (26260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26260) i2c.master: I2C software timeout[0m
+[1;31mE (26260) i2c.master: I2C software timeout[0m
+[0;33mW (26260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26280) i2c.master: I2C software timeout[0m
+[1;31mE (26280) i2c.master: I2C software timeout[0m
+[0;32mI (27230) ESP1_MASTER: Recibido PANEL=2852[0m
+[0;33mW (27230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27230) i2c.master: I2C software timeout[0m
+[0;33mW (27260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27260) i2c.master: I2C software timeout[0m
+[1;31mE (27260) i2c.master: I2C software timeout[0m
+[0;33mW (27260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27280) i2c.master: I2C software timeout[0m
+[1;31mE (27280) i2c.master: I2C software timeout[0m
+[0;32mI (28230) ESP1_MASTER: Recibido PANEL=2676[0m
+[0;33mW (28230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28230) i2c.master: I2C software timeout[0m
+[0;33mW (28250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28250) i2c.master: I2C software timeout[0m
+[1;31mE (28250) i2c.master: I2C software timeout[0m
+[0;33mW (28260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28270) i2c.master: I2C software timeout[0m
+[1;31mE (28270) i2c.master: I2C software timeout[0m
+[0;32mI (29230) ESP1_MASTER: Recibido PANEL=2480[0m
+[0;33mW (29230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29230) i2c.master: I2C software timeout[0m
+[0;33mW (29250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29250) i2c.master: I2C software timeout[0m
+[1;31mE (29250) i2c.master: I2C software timeout[0m
+[0;33mW (29260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29270) i2c.master: I2C software timeout[0m
+[1;31mE (29270) i2c.master: I2C software timeout[0m
+[0;32mI (30180) ESP1_MASTER: URI recibida: /brillo?val=57[0m
+[0;33mW (30180) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30180) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30190) i2c.master: I2C software timeout[0m
+[0;33mW (30210) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30210) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30210) i2c.master: I2C software timeout[0m
+[1;31mE (30210) i2c.master: I2C software timeout[0m
+[0;33mW (30210) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30220) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (30230) ESP1_MASTER: Recibido PANEL=1947[0m
+[1;31mE (30230) i2c.master: I2C software timeout[0m
+[0;33mW (30240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30250) i2c.master: I2C software timeout[0m
+[0;32mI (31230) ESP1_MASTER: Recibido PANEL=1528[0m
+[0;33mW (31230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31230) i2c.master: I2C software timeout[0m
+[0;33mW (31260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31260) i2c.master: I2C software timeout[0m
+[1;31mE (31260) i2c.master: I2C software timeout[0m
+[0;33mW (31260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31280) i2c.master: I2C software timeout[0m
+[1;31mE (31280) i2c.master: I2C software timeout[0m
+[0;32mI (32230) ESP1_MASTER: Recibido PANEL=1327[0m
+[0;33mW (32230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32230) i2c.master: I2C software timeout[0m
+[0;33mW (32260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32260) i2c.master: I2C software timeout[0m
+[1;31mE (32260) i2c.master: I2C software timeout[0m
+[0;33mW (32260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32280) i2c.master: I2C software timeout[0m
+[1;31mE (32280) i2c.master: I2C software timeout[0m
+[0;32mI (33230) ESP1_MASTER: Recibido PANEL=1298[0m
+[0;33mW (33240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33240) i2c.master: I2C software timeout[0m
+[0;33mW (33260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33260) i2c.master: I2C software timeout[0m
+[1;31mE (33260) i2c.master: I2C software timeout[0m
+[0;33mW (33260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33280) i2c.master: I2C software timeout[0m
+[1;31mE (33280) i2c.master: I2C software timeout[0m
+[0;32mI (34230) ESP1_MASTER: Recibido PANEL=1735[0m
+[0;33mW (34230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34230) i2c.master: I2C software timeout[0m
+[0;33mW (34250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34250) i2c.master: I2C software timeout[0m
+[1;31mE (34250) i2c.master: I2C software timeout[0m
+[0;33mW (34260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34270) i2c.master: I2C software timeout[0m
+[1;31mE (34270) i2c.master: I2C software timeout[0m
+[0;32mI (36230) ESP1_MASTER: Recibido PANEL=2259[0m
+[0;33mW (36230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36230) i2c.master: I2C software timeout[0m
+[0;33mW (36260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36260) i2c.master: I2C software timeout[0m
+[1;31mE (36260) i2c.master: I2C software timeout[0m
+[0;33mW (36260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36280) i2c.master: I2C software timeout[0m
+[1;31mE (36280) i2c.master: I2C software timeout[0m
+[0;32mI (37250) ESP1_MASTER: Recibido PANEL=2544[0m
+[0;33mW (37250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37260) i2c.master: I2C software timeout[0m
+[0;33mW (37280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37280) i2c.master: I2C software timeout[0m
+[1;31mE (37280) i2c.master: I2C software timeout[0m
+[0;33mW (37280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37300) i2c.master: I2C software timeout[0m
+[1;31mE (37300) i2c.master: I2C software timeout[0m
+[0;32mI (38230) ESP1_MASTER: Recibido PANEL=2779[0m
+[0;33mW (38230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38230) i2c.master: I2C software timeout[0m
+[0;33mW (38260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38260) i2c.master: I2C software timeout[0m
+[1;31mE (38260) i2c.master: I2C software timeout[0m
+[0;33mW (38260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38280) i2c.master: I2C software timeout[0m
+[1;31mE (38280) i2c.master: I2C software timeout[0m
+[0;32mI (38380) ESP1_MASTER: URI recibida: /brillo?val=100[0m
+[0;33mW (38380) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38380) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38390) i2c.master: I2C software timeout[0m
+[0;33mW (38410) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38410) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38410) i2c.master: I2C software timeout[0m
+[1;31mE (38410) i2c.master: I2C software timeout[0m
+[0;33mW (38410) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38420) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38430) i2c.master: I2C software timeout[0m
+[0;33mW (38430) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38440) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38440) i2c.master: I2C software timeout[0m
+[0;32mI (39240) ESP1_MASTER: Recibido PANEL=2847[0m
+[0;33mW (39240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39250) i2c.master: I2C software timeout[0m
+[0;33mW (39270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39270) i2c.master: I2C software timeout[0m
+[1;31mE (39270) i2c.master: I2C software timeout[0m
+[0;33mW (39270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39290) i2c.master: I2C software timeout[0m
+[1;31mE (39290) i2c.master: I2C software timeout[0m
+[0;32mI (40230) ESP1_MASTER: Recibido PANEL=2941[0m
+[0;33mW (40230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40240) i2c.master: I2C software timeout[0m
+[0;33mW (40260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40260) i2c.master: I2C software timeout[0m
+[1;31mE (40260) i2c.master: I2C software timeout[0m
+[0;33mW (40260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40280) i2c.master: I2C software timeout[0m
+[1;31mE (40280) i2c.master: I2C software timeout[0m
+[0;32mI (41230) ESP1_MASTER: Recibido PANEL=3014[0m
+[0;33mW (41240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41240) i2c.master: I2C software timeout[0m
+[0;33mW (41260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41260) i2c.master: I2C software timeout[0m
+[1;31mE (41260) i2c.master: I2C software timeout[0m
+[0;33mW (41270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41280) i2c.master: I2C software timeout[0m
+[1;31mE (41280) i2c.master: I2C software timeout[0m
+[0;32mI (41950) ESP1_MASTER: URI recibida: /brillo?val=6[0m
+[0;33mW (41960) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41960) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41960) i2c.master: I2C software timeout[0m
+[0;33mW (41980) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41980) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41980) i2c.master: I2C software timeout[0m
+[1;31mE (41980) i2c.master: I2C software timeout[0m
+[0;33mW (41990) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41990) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42000) i2c.master: I2C software timeout[0m
+[1;31mE (42000) i2c.master: I2C software timeout[0m
+[0;32mI (42230) ESP1_MASTER: Recibido PANEL=2889[0m
+[0;33mW (42230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42230) i2c.master: I2C software timeout[0m
+[0;33mW (42260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42260) i2c.master: I2C software timeout[0m
+[1;31mE (42260) i2c.master: I2C software timeout[0m
+[0;33mW (42260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42280) i2c.master: I2C software timeout[0m
+[0;33mW (42280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42290) i2c.master: I2C software timeout[0m
+[0;32mI (43230) ESP1_MASTER: Recibido PANEL=2738[0m
+[0;33mW (43230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43230) i2c.master: I2C software timeout[0m
+[0;33mW (43260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43260) i2c.master: I2C software timeout[0m
+[1;31mE (43260) i2c.master: I2C software timeout[0m
+[0;33mW (43260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43280) i2c.master: I2C software timeout[0m
+[0;33mW (43280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43290) i2c.master: I2C software timeout[0m
+[0;32mI (44230) ESP1_MASTER: Recibido PANEL=2602[0m
+[0;33mW (44230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44230) i2c.master: I2C software timeout[0m
+[0;33mW (44260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44260) i2c.master: I2C software timeout[0m
+[1;31mE (44260) i2c.master: I2C software timeout[0m
+[0;33mW (44260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44280) i2c.master: I2C software timeout[0m
+[1;31mE (44280) i2c.master: I2C software timeout[0m
+[0;32mI (45230) ESP1_MASTER: Recibido PANEL=2544[0m
+[0;33mW (45230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45230) i2c.master: I2C software timeout[0m
+[0;33mW (45260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45260) i2c.master: I2C software timeout[0m
+[1;31mE (45260) i2c.master: I2C software timeout[0m
+[0;33mW (45260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45280) i2c.master: I2C software timeout[0m
+[1;31mE (45280) i2c.master: I2C software timeout[0m
+[0;32mI (46230) ESP1_MASTER: Recibido PANEL=2311[0m
+[0;33mW (46230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46240) i2c.master: I2C software timeout[0m
+[0;33mW (46260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46260) i2c.master: I2C software timeout[0m
+[1;31mE (46260) i2c.master: I2C software timeout[0m
+[0;33mW (46260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46280) i2c.master: I2C software timeout[0m
+[0;33mW (46280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46290) i2c.master: I2C software timeout[0m
+[0;32mI (47230) ESP1_MASTER: Recibido PANEL=2130[0m
+[0;33mW (47230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47230) i2c.master: I2C software timeout[0m
+[0;33mW (47260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47260) i2c.master: I2C software timeout[0m
+[1;31mE (47260) i2c.master: I2C software timeout[0m
+[0;33mW (47260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47280) i2c.master: I2C software timeout[0m
+[0;33mW (47280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47290) i2c.master: I2C software timeout[0m
+[0;32mI (48230) ESP1_MASTER: Recibido PANEL=1470[0m
+[0;33mW (48230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48240) i2c.master: I2C software timeout[0m
+[0;33mW (48260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48260) i2c.master: I2C software timeout[0m
+[1;31mE (48260) i2c.master: I2C software timeout[0m
+[0;33mW (48260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48280) i2c.master: I2C software timeout[0m
+[0;33mW (48280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48290) i2c.master: I2C software timeout[0m
+[0;32mI (49230) ESP1_MASTER: Recibido PANEL=1691[0m
+[0;33mW (49230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49230) i2c.master: I2C software timeout[0m
+[0;33mW (49260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49260) i2c.master: I2C software timeout[0m
+[1;31mE (49260) i2c.master: I2C software timeout[0m
+[0;33mW (49260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49280) i2c.master: I2C software timeout[0m
+[1;31mE (49280) i2c.master: I2C software timeout[0m
+[0;33mW (50100) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (50100) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;32mI (50230) ESP1_MASTER: Recibido PANEL=1111[0m
+[0;33mW (50230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50230) i2c.master: I2C software timeout[0m
+[0;33mW (50260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50260) i2c.master: I2C software timeout[0m
+[1;31mE (50260) i2c.master: I2C software timeout[0m
+[0;33mW (50260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50280) i2c.master: I2C software timeout[0m
+[1;31mE (50280) i2c.master: I2C software timeout[0m
+[0;32mI (51230) ESP1_MASTER: Recibido PANEL=949[0m
+[0;33mW (51230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51230) i2c.master: I2C software timeout[0m
+[0;33mW (51260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51260) i2c.master: I2C software timeout[0m
+[1;31mE (51260) i2c.master: I2C software timeout[0m
+[0;33mW (51260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51280) i2c.master: I2C software timeout[0m
+[1;31mE (51280) i2c.master: I2C software timeout[0m
+[0;32mI (52240) ESP1_MASTER: Recibido PANEL=1353[0m
+[0;33mW (52240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52250) i2c.master: I2C software timeout[0m
+[0;33mW (52270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52270) i2c.master: I2C software timeout[0m
+[1;31mE (52270) i2c.master: I2C software timeout[0m
+[0;33mW (52270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52290) i2c.master: I2C software timeout[0m
+[0;33mW (52290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52300) i2c.master: I2C software timeout[0m
+[0;32mI (53230) ESP1_MASTER: Recibido PANEL=1585[0m
+[0;33mW (53230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53230) i2c.master: I2C software timeout[0m
+[0;33mW (53260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53260) i2c.master: I2C software timeout[0m
+[1;31mE (53260) i2c.master: I2C software timeout[0m
+[0;33mW (53260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53280) i2c.master: I2C software timeout[0m
+[1;31mE (53280) i2c.master: I2C software timeout[0m
+[0;32mI (54230) ESP1_MASTER: Recibido PANEL=1655[0m
+[0;33mW (54230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54240) i2c.master: I2C software timeout[0m
+[0;33mW (54260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54260) i2c.master: I2C software timeout[0m
+[1;31mE (54260) i2c.master: I2C software timeout[0m
+[0;33mW (54260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54280) i2c.master: I2C software timeout[0m
+[1;31mE (54280) i2c.master: I2C software timeout[0m
+[0;32mI (55230) ESP1_MASTER: Recibido PANEL=1697[0m
+[0;33mW (55230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55230) i2c.master: I2C software timeout[0m
+[0;33mW (55260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55260) i2c.master: I2C software timeout[0m
+[1;31mE (55260) i2c.master: I2C software timeout[0m
+[0;33mW (55260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55280) i2c.master: I2C software timeout[0m
+[1;31mE (55280) i2c.master: I2C software timeout[0m
+[0;32mI (56230) ESP1_MASTER: Recibido PANEL=1767[0m
+[0;33mW (56230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56240) i2c.master: I2C software timeout[0m
+[0;33mW (56260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56260) i2c.master: I2C software timeout[0m
+[1;31mE (56260) i2c.master: I2C software timeout[0m
+[0;33mW (56260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56280) i2c.master: I2C software timeout[0m
+[1;31mE (56280) i2c.master: I2C software timeout[0m
+[0;32mI (57230) ESP1_MASTER: Recibido PANEL=2057[0m
+[0;33mW (57230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57240) i2c.master: I2C software timeout[0m
+[0;33mW (57260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57260) i2c.master: I2C software timeout[0m
+[1;31mE (57260) i2c.master: I2C software timeout[0m
+[0;33mW (57260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57280) i2c.master: I2C software timeout[0m
+[1;31mE (57280) i2c.master: I2C software timeout[0m
+[0;32mI (58240) ESP1_MASTER: Recibido PANEL=2649[0m
+[0;33mW (58240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (58240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (58240) i2c.master: I2C software timeout[0m
+[0;33mW (58260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (58260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (58260) i2c.master: I2C software timeout[0m
+[1;31mE (58260) i2c.master: I2C software timeout[0m
+[0;33mW (58260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (58270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (58280) i2c.master: I2C software timeout[0m
+[0;33mW (58280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (58290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (58290) i2c.master: I2C software timeout[0m
+[0;32mI (59240) ESP1_MASTER: Recibido PANEL=2433[0m
+[0;33mW (59240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59240) i2c.master: I2C software timeout[0m
+[0;33mW (59270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59270) i2c.master: I2C software timeout[0m
+[1;31mE (59270) i2c.master: I2C software timeout[0m
+[0;33mW (59270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59290) i2c.master: I2C software timeout[0m
+[1;31mE (59290) i2c.master: I2C software timeout[0m
+[0;32mI (60230) ESP1_MASTER: Recibido PANEL=2743[0m
+[0;33mW (60230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60230) i2c.master: I2C software timeout[0m
+[0;33mW (60260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60260) i2c.master: I2C software timeout[0m
+[1;31mE (60260) i2c.master: I2C software timeout[0m
+[0;33mW (60260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60280) i2c.master: I2C software timeout[0m
+[1;31mE (60280) i2c.master: I2C software timeout[0m
+[0;32mI (61230) ESP1_MASTER: Recibido PANEL=2745[0m
+[0;33mW (61230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61230) i2c.master: I2C software timeout[0m
+[0;33mW (61260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61260) i2c.master: I2C software timeout[0m
+[1;31mE (61260) i2c.master: I2C software timeout[0m
+[0;33mW (61260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61280) i2c.master: I2C software timeout[0m
+[1;31mE (61280) i2c.master: I2C software timeout[0m
+[0;32mI (62230) ESP1_MASTER: Recibido PANEL=2911[0m
+[0;33mW (62230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62230) i2c.master: I2C software timeout[0m
+[0;33mW (62260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62260) i2c.master: I2C software timeout[0m
+[1;31mE (62260) i2c.master: I2C software timeout[0m
+[0;33mW (62260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62280) i2c.master: I2C software timeout[0m
+[1;31mE (62280) i2c.master: I2C software timeout[0m
+[0;32mI (63230) ESP1_MASTER: Recibido PANEL=2966[0m
+[0;33mW (63230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63240) i2c.master: I2C software timeout[0m
+[0;33mW (63260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63260) i2c.master: I2C software timeout[0m
+[1;31mE (63260) i2c.master: I2C software timeout[0m
+[0;33mW (63260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63280) i2c.master: I2C software timeout[0m
+[1;31mE (63280) i2c.master: I2C software timeout[0m
+[0;32mI (64230) ESP1_MASTER: Recibido PANEL=3044[0m
+[0;33mW (64230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64230) i2c.master: I2C software timeout[0m
+[0;33mW (64260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64260) i2c.master: I2C software timeout[0m
+[1;31mE (64260) i2c.master: I2C software timeout[0m
+[0;33mW (64260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64280) i2c.master: I2C software timeout[0m
+[0;33mW (64280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64290) i2c.master: I2C software timeout[0m
+[0;32mI (65240) ESP1_MASTER: Recibido PANEL=2998[0m
+[0;33mW (65240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65240) i2c.master: I2C software timeout[0m
+[0;33mW (65270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65270) i2c.master: I2C software timeout[0m
+[1;31mE (65270) i2c.master: I2C software timeout[0m
+[0;33mW (65270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65290) i2c.master: I2C software timeout[0m
+[1;31mE (65290) i2c.master: I2C software timeout[0m
+[0;32mI (66230) ESP1_MASTER: Recibido PANEL=2983[0m
+[0;33mW (66230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66230) i2c.master: I2C software timeout[0m
+[0;33mW (66260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66260) i2c.master: I2C software timeout[0m
+[1;31mE (66260) i2c.master: I2C software timeout[0m
+[0;33mW (66260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66280) i2c.master: I2C software timeout[0m
+[0;33mW (66280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66290) i2c.master: I2C software timeout[0m
+[0;32mI (67230) ESP1_MASTER: Recibido PANEL=2833[0m
+[0;33mW (67230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67230) i2c.master: I2C software timeout[0m
+[0;33mW (67260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67260) i2c.master: I2C software timeout[0m
+[1;31mE (67260) i2c.master: I2C software timeout[0m
+[0;33mW (67260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67280) i2c.master: I2C software timeout[0m
+[0;33mW (67280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67290) i2c.master: I2C software timeout[0m
+[0;32mI (68230) ESP1_MASTER: Recibido PANEL=2797[0m
+[0;33mW (68240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68240) i2c.master: I2C software timeout[0m
+[0;33mW (68260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68260) i2c.master: I2C software timeout[0m
+[1;31mE (68260) i2c.master: I2C software timeout[0m
+[0;33mW (68260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68280) i2c.master: I2C software timeout[0m
+[1;31mE (68280) i2c.master: I2C software timeout[0m
+[0;32mI (69230) ESP1_MASTER: Recibido PANEL=2685[0m
+[0;33mW (69230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69230) i2c.master: I2C software timeout[0m
+[0;33mW (69260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69260) i2c.master: I2C software timeout[0m
+[1;31mE (69260) i2c.master: I2C software timeout[0m
+[0;33mW (69260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69280) i2c.master: I2C software timeout[0m
+[0;33mW (69280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69290) i2c.master: I2C software timeout[0m
+[0;32mI (70230) ESP1_MASTER: Recibido PANEL=2495[0m
+[0;33mW (70230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70230) i2c.master: I2C software timeout[0m
+[0;33mW (70260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70260) i2c.master: I2C software timeout[0m
+[1;31mE (70260) i2c.master: I2C software timeout[0m
+[0;33mW (70260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70280) i2c.master: I2C software timeout[0m
+[0;33mW (70280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70290) i2c.master: I2C software timeout[0m
+[0;32mI (71230) ESP1_MASTER: Recibido PANEL=2438[0m
+[0;33mW (71230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71240) i2c.master: I2C software timeout[0m
+[1;31mE (71260) i2c.master: I2C software timeout[0m
+[0;33mW (71260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71260) i2c.master: I2C software timeout[0m
+[0;33mW (71260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71280) i2c.master: I2C software timeout[0m
+[0;33mW (71280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71290) i2c.master: I2C software timeout[0m
+[0;32mI (72230) ESP1_MASTER: Recibido PANEL=2330[0m
+[0;33mW (72230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72240) i2c.master: I2C software timeout[0m
+[0;33mW (72260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72260) i2c.master: I2C software timeout[0m
+[1;31mE (72260) i2c.master: I2C software timeout[0m
+[0;33mW (72260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72280) i2c.master: I2C software timeout[0m
+[1;31mE (72280) i2c.master: I2C software timeout[0m
+[0;32mI (73230) ESP1_MASTER: Recibido PANEL=2275[0m
+[0;33mW (73240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73240) i2c.master: I2C software timeout[0m
+[0;33mW (73260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73260) i2c.master: I2C software timeout[0m
+[1;31mE (73260) i2c.master: I2C software timeout[0m
+[0;33mW (73270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73280) i2c.master: I2C software timeout[0m
+[0;33mW (73280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73300) i2c.master: I2C software timeout[0m
+[0;32mI (74230) ESP1_MASTER: Recibido PANEL=2524[0m
+[0;33mW (74230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74230) i2c.master: I2C software timeout[0m
+[0;33mW (74260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74260) i2c.master: I2C software timeout[0m
+[1;31mE (74260) i2c.master: I2C software timeout[0m
+[0;33mW (74260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74280) i2c.master: I2C software timeout[0m
+[1;31mE (74280) i2c.master: I2C software timeout[0m
+[0;32mI (75230) ESP1_MASTER: Recibido PANEL=2919[0m
+[0;33mW (75230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75240) i2c.master: I2C software timeout[0m
+[0;33mW (75260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75260) i2c.master: I2C software timeout[0m
+[1;31mE (75260) i2c.master: I2C software timeout[0m
+[0;33mW (75260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75280) i2c.master: I2C software timeout[0m
+[0;33mW (75280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75290) i2c.master: I2C software timeout[0m
+[0;32mI (76230) ESP1_MASTER: Recibido PANEL=3071[0m
+[0;33mW (76230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76230) i2c.master: I2C software timeout[0m
+[0;33mW (76260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76260) i2c.master: I2C software timeout[0m
+[1;31mE (76260) i2c.master: I2C software timeout[0m
+[0;33mW (76260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76280) i2c.master: I2C software timeout[0m
+[1;31mE (76280) i2c.master: I2C software timeout[0m
+[0;32mI (77230) ESP1_MASTER: Recibido PANEL=2782[0m
+[0;33mW (77230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77230) i2c.master: I2C software timeout[0m
+[0;33mW (77260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77260) i2c.master: I2C software timeout[0m
+[1;31mE (77260) i2c.master: I2C software timeout[0m
+[0;33mW (77260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77280) i2c.master: I2C software timeout[0m
+[1;31mE (77280) i2c.master: I2C software timeout[0m
+[0;32mI (78230) ESP1_MASTER: Recibido PANEL=2776[0m
+[0;33mW (78230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78230) i2c.master: I2C software timeout[0m
+[0;33mW (78260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78260) i2c.master: I2C software timeout[0m
+[1;31mE (78260) i2c.master: I2C software timeout[0m
+[0;33mW (78260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78280) i2c.master: I2C software timeout[0m
+[1;31mE (78280) i2c.master: I2C software timeout[0m
+[0;32mI (79230) ESP1_MASTER: Recibido PANEL=3009[0m
+[0;33mW (79230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79240) i2c.master: I2C software timeout[0m
+[0;33mW (79260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79260) i2c.master: I2C software timeout[0m
+[1;31mE (79260) i2c.master: I2C software timeout[0m
+[0;33mW (79260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79280) i2c.master: I2C software timeout[0m
+[1;31mE (79280) i2c.master: I2C software timeout[0m
+[0;32mI (80230) ESP1_MASTER: Recibido PANEL=2924[0m
+[0;33mW (80240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80240) i2c.master: I2C software timeout[0m
+[0;33mW (80260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80260) i2c.master: I2C software timeout[0m
+[1;31mE (80260) i2c.master: I2C software timeout[0m
+[0;33mW (80270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80280) i2c.master: I2C software timeout[0m
+[1;31mE (80280) i2c.master: I2C software timeout[0m
+[0;32mI (81230) ESP1_MASTER: Recibido PANEL=3059[0m
+[0;33mW (81230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81240) i2c.master: I2C software timeout[0m
+[0;33mW (81260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81260) i2c.master: I2C software timeout[0m
+[1;31mE (81260) i2c.master: I2C software timeout[0m
+[0;33mW (81270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81280) i2c.master: I2C software timeout[0m
+[1;31mE (81280) i2c.master: I2C software timeout[0m
+[0;32mI (82230) ESP1_MASTER: Recibido PANEL=2905[0m
+[0;33mW (82230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82230) i2c.master: I2C software timeout[0m
+[0;33mW (82260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82260) i2c.master: I2C software timeout[0m
+[1;31mE (82260) i2c.master: I2C software timeout[0m
+[0;33mW (82260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82280) i2c.master: I2C software timeout[0m
+[1;31mE (82280) i2c.master: I2C software timeout[0m
+[0;32mI (83230) ESP1_MASTER: Recibido PANEL=2943[0m
+[0;33mW (83230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83240) i2c.master: I2C software timeout[0m
+[0;33mW (83260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83260) i2c.master: I2C software timeout[0m
+[1;31mE (83260) i2c.master: I2C software timeout[0m
+[0;33mW (83260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83280) i2c.master: I2C software timeout[0m
+[0;33mW (83280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83290) i2c.master: I2C software timeout[0m
+[0;32mI (84230) ESP1_MASTER: Recibido PANEL=2775[0m
+[0;33mW (84230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84240) i2c.master: I2C software timeout[0m
+[0;33mW (84260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84260) i2c.master: I2C software timeout[0m
+[1;31mE (84260) i2c.master: I2C software timeout[0m
+[0;33mW (84260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84280) i2c.master: I2C software timeout[0m
+[1;31mE (84280) i2c.master: I2C software timeout[0m
+[0;32mI (85240) ESP1_MASTER: Recibido PANEL=2558[0m
+[0;33mW (85240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85240) i2c.master: I2C software timeout[0m
+[0;33mW (85270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85270) i2c.master: I2C software timeout[0m
+[1;31mE (85270) i2c.master: I2C software timeout[0m
+[0;33mW (85270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85290) i2c.master: I2C software timeout[0m
+[1;31mE (85290) i2c.master: I2C software timeout[0m
+[0;32mI (86230) ESP1_MASTER: Recibido PANEL=2300[0m
+[0;33mW (86230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86230) i2c.master: I2C software timeout[0m
+[0;33mW (86260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86260) i2c.master: I2C software timeout[0m
+[1;31mE (86260) i2c.master: I2C software timeout[0m
+[0;33mW (86260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86280) i2c.master: I2C software timeout[0m
+[1;31mE (86280) i2c.master: I2C software timeout[0m
+[0;32mI (87230) ESP1_MASTER: Recibido PANEL=2175[0m
+[0;33mW (87230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87230) i2c.master: I2C software timeout[0m
+[0;33mW (87260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87260) i2c.master: I2C software timeout[0m
+[1;31mE (87260) i2c.master: I2C software timeout[0m
+[0;33mW (87260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87280) i2c.master: I2C software timeout[0m
+[1;31mE (87280) i2c.master: I2C software timeout[0m
+[0;32mI (88230) ESP1_MASTER: Recibido PANEL=1789[0m
+[0;33mW (88230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88230) i2c.master: I2C software timeout[0m
+[0;33mW (88260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88260) i2c.master: I2C software timeout[0m
+[1;31mE (88260) i2c.master: I2C software timeout[0m
+[0;33mW (88260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88280) i2c.master: I2C software timeout[0m
+[1;31mE (88280) i2c.master: I2C software timeout[0m
+[0;32mI (89230) ESP1_MASTER: Recibido PANEL=1593[0m
+[0;33mW (89230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89240) i2c.master: I2C software timeout[0m
+[0;33mW (89260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89260) i2c.master: I2C software timeout[0m
+[1;31mE (89260) i2c.master: I2C software timeout[0m
+[0;33mW (89260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89280) i2c.master: I2C software timeout[0m
+[1;31mE (89280) i2c.master: I2C software timeout[0m
+[0;32mI (90230) ESP1_MASTER: Recibido PANEL=1552[0m
+[0;33mW (90230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90230) i2c.master: I2C software timeout[0m
+[0;33mW (90260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90260) i2c.master: I2C software timeout[0m
+[1;31mE (90260) i2c.master: I2C software timeout[0m
+[0;33mW (90260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90280) i2c.master: I2C software timeout[0m
+[1;31mE (90280) i2c.master: I2C software timeout[0m
+[0;32mI (91230) ESP1_MASTER: Recibido PANEL=1394[0m
+[0;33mW (91230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91240) i2c.master: I2C software timeout[0m
+[0;33mW (91260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91260) i2c.master: I2C software timeout[0m
+[1;31mE (91260) i2c.master: I2C software timeout[0m
+[0;33mW (91260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91280) i2c.master: I2C software timeout[0m
+[1;31mE (91280) i2c.master: I2C software timeout[0m
+[0;32mI (92230) ESP1_MASTER: Recibido PANEL=1369[0m
+[0;33mW (92230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92240) i2c.master: I2C software timeout[0m
+[0;33mW (92260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92260) i2c.master: I2C software timeout[0m
+[1;31mE (92260) i2c.master: I2C software timeout[0m
+[0;33mW (92260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92280) i2c.master: I2C software timeout[0m
+[1;31mE (92280) i2c.master: I2C software timeout[0m
+[0;32mI (93250) ESP1_MASTER: Recibido PANEL=1433[0m
+[0;33mW (93250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93250) i2c.master: I2C software timeout[0m
+[0;33mW (93280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93280) i2c.master: I2C software timeout[0m
+[1;31mE (93280) i2c.master: I2C software timeout[0m
+[0;33mW (93280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93300) i2c.master: I2C software timeout[0m
+[1;31mE (93300) i2c.master: I2C software timeout[0m
+[0;32mI (94230) ESP1_MASTER: Recibido PANEL=1535[0m
+[0;33mW (94230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94230) i2c.master: I2C software timeout[0m
+[0;33mW (94260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94260) i2c.master: I2C software timeout[0m
+[1;31mE (94260) i2c.master: I2C software timeout[0m
+[0;33mW (94260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94280) i2c.master: I2C software timeout[0m
+[1;31mE (94280) i2c.master: I2C software timeout[0m
+[0;32mI (95230) ESP1_MASTER: Recibido PANEL=1691[0m
+[0;33mW (95230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95230) i2c.master: I2C software timeout[0m
+[0;33mW (95260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95260) i2c.master: I2C software timeout[0m
+[1;31mE (95260) i2c.master: I2C software timeout[0m
+[0;33mW (95260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95280) i2c.master: I2C software timeout[0m
+[1;31mE (95280) i2c.master: I2C software timeout[0m
+[0;32mI (96230) ESP1_MASTER: Recibido PANEL=2019[0m
+[0;33mW (96230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96230) i2c.master: I2C software timeout[0m
+[0;33mW (96260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96260) i2c.master: I2C software timeout[0m
+[1;31mE (96260) i2c.master: I2C software timeout[0m
+[0;33mW (96260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96280) i2c.master: I2C software timeout[0m
+[1;31mE (96280) i2c.master: I2C software timeout[0m
+[0;32mI (97230) ESP1_MASTER: Recibido PANEL=2112[0m
+[0;33mW (97230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97230) i2c.master: I2C software timeout[0m
+[0;33mW (97260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97260) i2c.master: I2C software timeout[0m
+[1;31mE (97260) i2c.master: I2C software timeout[0m
+[0;33mW (97260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97280) i2c.master: I2C software timeout[0m
+[1;31mE (97280) i2c.master: I2C software timeout[0m
+[0;32mI (98230) ESP1_MASTER: Recibido PANEL=2231[0m
+[0;33mW (98230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98230) i2c.master: I2C software timeout[0m
+[0;33mW (98260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98260) i2c.master: I2C software timeout[0m
+[1;31mE (98260) i2c.master: I2C software timeout[0m
+[0;33mW (98260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98280) i2c.master: I2C software timeout[0m
+[1;31mE (98280) i2c.master: I2C software timeout[0m
+[0;32mI (99230) ESP1_MASTER: Recibido PANEL=2356[0m
+[0;33mW (99230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99230) i2c.master: I2C software timeout[0m
+[0;33mW (99260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99260) i2c.master: I2C software timeout[0m
+[1;31mE (99260) i2c.master: I2C software timeout[0m
+[0;33mW (99260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99280) i2c.master: I2C software timeout[0m
+[1;31mE (99280) i2c.master: I2C software timeout[0m
+[0;32mI (100240) ESP1_MASTER: Recibido PANEL=2366[0m
+[0;33mW (100240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100240) i2c.master: I2C software timeout[0m
+[0;33mW (100270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100270) i2c.master: I2C software timeout[0m
+[1;31mE (100270) i2c.master: I2C software timeout[0m
+[0;33mW (100270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100290) i2c.master: I2C software timeout[0m
+[1;31mE (100290) i2c.master: I2C software timeout[0m
+[0;32mI (101230) ESP1_MASTER: Recibido PANEL=2416[0m
+[0;33mW (101230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101240) i2c.master: I2C software timeout[0m
+[0;33mW (101260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101260) i2c.master: I2C software timeout[0m
+[1;31mE (101260) i2c.master: I2C software timeout[0m
+[0;33mW (101270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101280) i2c.master: I2C software timeout[0m
+[1;31mE (101280) i2c.master: I2C software timeout[0m
+[0;32mI (102240) ESP1_MASTER: Recibido PANEL=2513[0m
+[0;33mW (102240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102240) i2c.master: I2C software timeout[0m
+[0;33mW (102270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102270) i2c.master: I2C software timeout[0m
+[1;31mE (102270) i2c.master: I2C software timeout[0m
+[0;33mW (102270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102290) i2c.master: I2C software timeout[0m
+[1;31mE (102290) i2c.master: I2C software timeout[0m
+[0;32mI (103230) ESP1_MASTER: Recibido PANEL=2559[0m
+[0;33mW (103230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103230) i2c.master: I2C software timeout[0m
+[0;33mW (103260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103260) i2c.master: I2C software timeout[0m
+[1;31mE (103260) i2c.master: I2C software timeout[0m
+[0;33mW (103260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103280) i2c.master: I2C software timeout[0m
+[0;33mW (103280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103290) i2c.master: I2C software timeout[0m
+[0;32mI (104230) ESP1_MASTER: Recibido PANEL=2545[0m
+[0;33mW (104230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104230) i2c.master: I2C software timeout[0m
+[0;33mW (104260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104260) i2c.master: I2C software timeout[0m
+[1;31mE (104260) i2c.master: I2C software timeout[0m
+[0;33mW (104260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104280) i2c.master: I2C software timeout[0m
+[1;31mE (104280) i2c.master: I2C software timeout[0m
+[0;32mI (105230) ESP1_MASTER: Recibido PANEL=2615[0m
+[0;33mW (105230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105240) i2c.master: I2C software timeout[0m
+[0;33mW (105260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105260) i2c.master: I2C software timeout[0m
+[1;31mE (105260) i2c.master: I2C software timeout[0m
+[0;33mW (105260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105280) i2c.master: I2C software timeout[0m
+[1;31mE (105280) i2c.master: I2C software timeout[0m
+[0;32mI (106230) ESP1_MASTER: Recibido PANEL=2800[0m
+[0;33mW (106230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106230) i2c.master: I2C software timeout[0m
+[0;33mW (106260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106260) i2c.master: I2C software timeout[0m
+[1;31mE (106260) i2c.master: I2C software timeout[0m
+[0;33mW (106260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106280) i2c.master: I2C software timeout[0m
+[1;31mE (106280) i2c.master: I2C software timeout[0m
+[0;32mI (107240) ESP1_MASTER: Recibido PANEL=2874[0m
+[0;33mW (107240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107240) i2c.master: I2C software timeout[0m
+[0;33mW (107270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107270) i2c.master: I2C software timeout[0m
+[1;31mE (107270) i2c.master: I2C software timeout[0m
+[0;33mW (107270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107290) i2c.master: I2C software timeout[0m
+[1;31mE (107290) i2c.master: I2C software timeout[0m
+[0;32mI (108230) ESP1_MASTER: Recibido PANEL=3006[0m
+[0;33mW (108230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108240) i2c.master: I2C software timeout[0m
+[0;33mW (108260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108260) i2c.master: I2C software timeout[0m
+[1;31mE (108260) i2c.master: I2C software timeout[0m
+[0;33mW (108260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108280) i2c.master: I2C software timeout[0m
+[1;31mE (108280) i2c.master: I2C software timeout[0m
+[0;32mI (109270) ESP1_MASTER: Recibido PANEL=2642[0m
+[0;33mW (109270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109280) i2c.master: I2C software timeout[0m
+[0;33mW (109300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109300) i2c.master: I2C software timeout[0m
+[1;31mE (109300) i2c.master: I2C software timeout[0m
+[0;33mW (109300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109320) i2c.master: I2C software timeout[0m
+[1;31mE (109320) i2c.master: I2C software timeout[0m
+[0;32mI (110260) ESP1_MASTER: Recibido PANEL=2800[0m
+[0;33mW (110260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110270) i2c.master: I2C software timeout[0m
+[0;33mW (110290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110290) i2c.master: I2C software timeout[0m
+[1;31mE (110290) i2c.master: I2C software timeout[0m
+[0;33mW (110290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110310) i2c.master: I2C software timeout[0m
+[1;31mE (110310) i2c.master: I2C software timeout[0m
+[0;32mI (111230) ESP1_MASTER: Recibido PANEL=2612[0m
+[0;33mW (111230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111230) i2c.master: I2C software timeout[0m
+[0;33mW (111260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111260) i2c.master: I2C software timeout[0m
+[1;31mE (111260) i2c.master: I2C software timeout[0m
+[0;33mW (111260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111280) i2c.master: I2C software timeout[0m
+[1;31mE (111280) i2c.master: I2C software timeout[0m
+[0;32mI (112250) ESP1_MASTER: Recibido PANEL=2768[0m
+[0;33mW (112250) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112250) i2c.master: I2C software timeout[0m
+[0;33mW (112280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112280) i2c.master: I2C software timeout[0m
+[1;31mE (112280) i2c.master: I2C software timeout[0m
+[0;33mW (112280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112300) i2c.master: I2C software timeout[0m
+[0;33mW (112300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112310) i2c.master: I2C software timeout[0m
+[0;32mI (113230) ESP1_MASTER: Recibido PANEL=2533[0m
+[0;33mW (113230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113230) i2c.master: I2C software timeout[0m
+[0;33mW (113260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113260) i2c.master: I2C software timeout[0m
+[1;31mE (113260) i2c.master: I2C software timeout[0m
+[0;33mW (113260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113280) i2c.master: I2C software timeout[0m
+[1;31mE (113280) i2c.master: I2C software timeout[0m
+[0;32mI (114240) ESP1_MASTER: Recibido PANEL=2242[0m
+[0;33mW (114240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114240) i2c.master: I2C software timeout[0m
+[0;33mW (114270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114270) i2c.master: I2C software timeout[0m
+[1;31mE (114270) i2c.master: I2C software timeout[0m
+[0;33mW (114270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114290) i2c.master: I2C software timeout[0m
+[0;33mW (114290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114300) i2c.master: I2C software timeout[0m
+[0;32mI (115230) ESP1_MASTER: Recibido PANEL=2298[0m
+[0;33mW (115230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115240) i2c.master: I2C software timeout[0m
+[0;33mW (115260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115260) i2c.master: I2C software timeout[0m
+[1;31mE (115260) i2c.master: I2C software timeout[0m
+[0;33mW (115270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115280) i2c.master: I2C software timeout[0m
+[1;31mE (115280) i2c.master: I2C software timeout[0m
+[0;32mI (116290) ESP1_MASTER: Recibido PANEL=1734[0m
+[0;33mW (116290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116290) i2c.master: I2C software timeout[0m
+[0;33mW (116320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116320) i2c.master: I2C software timeout[0m
+[1;31mE (116320) i2c.master: I2C software timeout[0m
+[0;33mW (116320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116340) i2c.master: I2C software timeout[0m
+[1;31mE (116340) i2c.master: I2C software timeout[0m
+[0;32mI (117230) ESP1_MASTER: Recibido PANEL=1344[0m
+[0;33mW (117230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117230) i2c.master: I2C software timeout[0m
+[0;33mW (117260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117260) i2c.master: I2C software timeout[0m
+[1;31mE (117260) i2c.master: I2C software timeout[0m
+[0;33mW (117260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117280) i2c.master: I2C software timeout[0m
+[0;33mW (117280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117290) i2c.master: I2C software timeout[0m
+[0;32mI (118230) ESP1_MASTER: Recibido PANEL=1465[0m
+[0;33mW (118230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118230) i2c.master: I2C software timeout[0m
+[0;33mW (118260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118260) i2c.master: I2C software timeout[0m
+[1;31mE (118260) i2c.master: I2C software timeout[0m
+[0;33mW (118260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118280) i2c.master: I2C software timeout[0m
+[0;33mW (118280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118290) i2c.master: I2C software timeout[0m
+[0;32mI (119230) ESP1_MASTER: Recibido PANEL=1155[0m
+[0;33mW (119230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119230) i2c.master: I2C software timeout[0m
+[0;33mW (119260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119260) i2c.master: I2C software timeout[0m
+[1;31mE (119260) i2c.master: I2C software timeout[0m
+[0;33mW (119260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119280) i2c.master: I2C software timeout[0m
+[1;31mE (119280) i2c.master: I2C software timeout[0m
+[0;32mI (120230) ESP1_MASTER: Recibido PANEL=1466[0m
+[0;33mW (120230) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120230) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120240) i2c.master: I2C software timeout[0m
+[0;33mW (120260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120260) i2c.master: I2C software timeout[0m
+[1;31mE (120260) i2c.master: I2C software timeout[0m
+[0;33mW (120270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120280) i2c.master: I2C software timeout[0m
+[1;31mE (120280) i2c.master: I2C software timeout[0m

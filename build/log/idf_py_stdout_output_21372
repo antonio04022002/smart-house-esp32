@@ -1,0 +1,2044 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\anton\practicas_micros\proyecto_final\build\proyecto_final.elf C:\Users\anton\practicas_micros\proyecto_final\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.2-2\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2026 23:31:52[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1df20h (122656) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002df48 vaddr=3ffb0000 size=020d0h (  8400) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8f940h (588096) map[0m
+[0;32mI (334) esp_image: segment 3: paddr=000bf968 vaddr=3ffb20d0 size=01e74h (  7796) load[0m
+[0;32mI (337) esp_image: segment 4: paddr=000c17e4 vaddr=40080000 size=1848ch ( 99468) load[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d9c78 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) cpu_start: Multicore app[0m
+[0;32mI (407) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (408) cpu_start: Pro cpu start user code[0m
+[0;32mI (408) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (410) app_init: Application information:[0m
+[0;32mI (413) app_init: Project name:     proyecto_final[0m
+[0;32mI (418) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     May 11 2026 23:31:34[0m
+[0;32mI (426) app_init: ELF file SHA256:  e3378e1d9...[0m
+[0;32mI (431) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (435) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (439) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (443) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (447) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (454) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (459) heap_init: At 3FFBC180 len 00023E80 (143 KiB): DRAM[0m
+[0;32mI (464) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (469) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (475) heap_init: At 4009848C len 00007B74 (30 KiB): IRAM[0m
+[0;32mI (481) spi_flash: detected chip: generic[0m
+[0;32mI (484) spi_flash: flash io: dio[0m
+[0;33mW (487) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (510) main_task: Calling app_main()[0m
+[0;32mI (540) wifi:wifi driver task: 3ffc4404, prio:23, stack:6656, core=0[0m
+[0;32mI (560) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (560) wifi:wifi certification version: v7.0[0m
+[0;32mI (560) wifi:config NVS flash: enabled[0m
+[0;32mI (560) wifi:config nano formatting: disabled[0m
+[0;32mI (560) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (570) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (570) wifi:Init management short buffer num: 32[0m
+[0;32mI (570) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (580) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (580) wifi:Init static rx buffer num: 10[0m
+[0;32mI (590) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (590) wifi_init: rx ba win: 6[0m
+[0;32mI (590) wifi_init: accept mbox: 6[0m
+[0;32mI (600) wifi_init: tcpip mbox: 32[0m
+[0;32mI (600) wifi_init: udp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp mbox: 6[0m
+[0;32mI (600) wifi_init: tcp tx win: 5760[0m
+[0;32mI (610) wifi_init: tcp rx win: 5760[0m
+[0;32mI (610) wifi_init: tcp mss: 1440[0m
+[0;32mI (610) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (620) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (630) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (700) wifi:mode : sta (94:51:dc:2d:86:d8) + softAP (94:51:dc:2d:86:d9)[0m
+[0;32mI (700) wifi:enable tsf[0m
+[0;32mI (710) wifi:Total power save buffer number: 16[0m
+[0;32mI (710) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (710) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (720) ESP1_MASTER: WiFi creado[0m
+[0;32mI (720) ESP1_MASTER: SSID: SMART_HOME[0m
+[0;32mI (720) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (730) ESP1_MASTER: PASS: 12345678[0m
+[0;32mI (730) ESP1_MASTER: IP: 192.168.4.1[0m
+[0;32mI (730) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (740) ESP1_MASTER: ESP-NOW listo[0m
+[0;32mI (740) ESP1_MASTER: Servidor web iniciado[0m
+[1;31mE (750) i2c.master: I2C software timeout[0m
+[1;31mE (750) i2c.master: I2C software timeout[0m
+[0;33mW (750) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (760) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (760) i2c.master: I2C software timeout[0m
+[1;31mE (770) i2c.master: I2C software timeout[0m
+[0;33mW (770) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (780) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (780) i2c.master: I2C software timeout[0m
+[1;31mE (790) i2c.master: I2C software timeout[0m
+[0;33mW (790) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (800) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (800) i2c.master: I2C software timeout[0m
+[0;33mW (810) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (810) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (820) i2c.master: I2C software timeout[0m
+[0;33mW (820) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (830) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[0;32mI (840) wifi:new:<1,0>, old:<1,0>, ap:<1,0>, sta:<0,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (840) wifi:station: fe:74:68:d7:16:f8 join, AID=1, bgn, 20[0m
+[1;31mE (850) i2c.master: I2C software timeout[0m
+[0;33mW (860) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (860) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (860) i2c.master: I2C software timeout[0m
+[0;33mW (870) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (880) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (880) i2c.master: I2C software timeout[0m
+[0;33mW (880) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (890) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (900) i2c.master: I2C software timeout[0m
+[0;33mW (900) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (910) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (910) i2c.master: I2C software timeout[0m
+[0;33mW (920) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (920) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (930) i2c.master: I2C software timeout[0m
+[0;33mW (930) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (940) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (940) i2c.master: I2C software timeout[0m
+[0;33mW (950) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (950) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (960) i2c.master: I2C software timeout[0m
+[0;33mW (960) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (970) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (980) i2c.master: I2C software timeout[0m
+[0;33mW (980) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;32mI (980) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;33mW (990) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1000) i2c.master: I2C software timeout[0m
+[1;31mE (1000) i2c.master: I2C software timeout[0m
+[0;33mW (1010) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1010) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1020) i2c.master: I2C software timeout[0m
+[0;33mW (1020) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1030) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1040) i2c.master: I2C software timeout[0m
+[0;33mW (1040) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1040) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1050) i2c.master: I2C software timeout[0m
+[0;33mW (1050) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1060) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1070) i2c.master: I2C software timeout[0m
+[0;33mW (1070) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1080) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1080) i2c.master: I2C software timeout[0m
+[0;33mW (1090) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1090) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1100) i2c.master: I2C software timeout[0m
+[0;33mW (1100) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1110) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1120) i2c.master: I2C software timeout[0m
+[0;33mW (1120) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1130) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1130) i2c.master: I2C software timeout[0m
+[0;33mW (1160) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1160) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1160) i2c.master: I2C software timeout[0m
+[1;31mE (1160) i2c.master: I2C software timeout[0m
+[0;33mW (1160) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1170) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1180) i2c.master: I2C software timeout[0m
+[0;33mW (1180) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1190) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1190) i2c.master: I2C software timeout[0m
+[0;32mI (1200) ESP1_MASTER: OLED activa[0m
+[0;33mW (1200) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1210) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1210) i2c.master: I2C software timeout[0m
+[0;33mW (1240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1240) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1240) i2c.master: I2C software timeout[0m
+[0;33mW (1240) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1250) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1250) i2c.master: I2C software timeout[0m
+[0;33mW (1260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1270) i2c.master: I2C software timeout[0m
+[0;33mW (1270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (1280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (1290) i2c.master: I2C software timeout[0m
+[0;32mI (1290) ESP1_MASTER: ESP1 maestro listo[0m
+[0;32mI (1290) main_task: Returned from app_main()[0m
+[0;32mI (1580) wifi:<ba-add>idx:2 (ifx:1, fe:74:68:d7:16:f8), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2270) i2c.master: I2C software timeout[0m
+[0;33mW (2290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2290) i2c.master: I2C software timeout[0m
+[1;31mE (2290) i2c.master: I2C software timeout[0m
+[0;33mW (2290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (2300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (2310) i2c.master: I2C software timeout[0m
+[1;31mE (2310) i2c.master: I2C software timeout[0m
+[0;33mW (3270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3270) i2c.master: I2C software timeout[0m
+[0;33mW (3290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3290) i2c.master: I2C software timeout[0m
+[1;31mE (3290) i2c.master: I2C software timeout[0m
+[0;33mW (3290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (3300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (3310) i2c.master: I2C software timeout[0m
+[1;31mE (3310) i2c.master: I2C software timeout[0m
+[0;33mW (4260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4270) i2c.master: I2C software timeout[0m
+[0;33mW (4290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4290) i2c.master: I2C software timeout[0m
+[1;31mE (4290) i2c.master: I2C software timeout[0m
+[0;33mW (4290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (4300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (4310) i2c.master: I2C software timeout[0m
+[1;31mE (4310) i2c.master: I2C software timeout[0m
+[0;33mW (5270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5270) i2c.master: I2C software timeout[0m
+[0;33mW (5290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5290) i2c.master: I2C software timeout[0m
+[1;31mE (5290) i2c.master: I2C software timeout[0m
+[0;33mW (5290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (5300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (5310) i2c.master: I2C software timeout[0m
+[1;31mE (5310) i2c.master: I2C software timeout[0m
+[0;33mW (6260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6270) i2c.master: I2C software timeout[0m
+[0;33mW (6290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6290) i2c.master: I2C software timeout[0m
+[1;31mE (6290) i2c.master: I2C software timeout[0m
+[0;33mW (6290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6310) i2c.master: I2C software timeout[0m
+[1;31mE (6310) i2c.master: I2C software timeout[0m
+[0;33mW (6880) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6880) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6890) i2c.master: I2C software timeout[0m
+[0;33mW (6910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6910) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6910) i2c.master: I2C software timeout[0m
+[1;31mE (6910) i2c.master: I2C software timeout[0m
+[0;33mW (6910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (6920) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (6930) i2c.master: I2C software timeout[0m
+[1;31mE (6930) i2c.master: I2C software timeout[0m
+[0;33mW (7260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7270) i2c.master: I2C software timeout[0m
+[0;33mW (7290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7290) i2c.master: I2C software timeout[0m
+[1;31mE (7290) i2c.master: I2C software timeout[0m
+[0;33mW (7290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7310) i2c.master: I2C software timeout[0m
+[1;31mE (7310) i2c.master: I2C software timeout[0m
+[0;33mW (7880) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7880) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7880) i2c.master: I2C software timeout[0m
+[0;33mW (7910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7910) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7910) i2c.master: I2C software timeout[0m
+[1;31mE (7910) i2c.master: I2C software timeout[0m
+[0;33mW (7910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7920) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7930) i2c.master: I2C software timeout[0m
+[0;33mW (7930) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (7940) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (7940) i2c.master: I2C software timeout[0m
+[0;33mW (8260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8270) i2c.master: I2C software timeout[0m
+[0;33mW (8290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8290) i2c.master: I2C software timeout[0m
+[1;31mE (8290) i2c.master: I2C software timeout[0m
+[0;33mW (8290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (8300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (8310) i2c.master: I2C software timeout[0m
+[1;31mE (8310) i2c.master: I2C software timeout[0m
+[0;33mW (9270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9270) i2c.master: I2C software timeout[0m
+[0;33mW (9290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9290) i2c.master: I2C software timeout[0m
+[1;31mE (9290) i2c.master: I2C software timeout[0m
+[0;33mW (9290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (9300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (9310) i2c.master: I2C software timeout[0m
+[1;31mE (9310) i2c.master: I2C software timeout[0m
+[0;33mW (10130) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10130) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10140) i2c.master: I2C software timeout[0m
+[0;33mW (10160) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10160) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10160) i2c.master: I2C software timeout[0m
+[1;31mE (10160) i2c.master: I2C software timeout[0m
+[0;33mW (10160) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10170) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10180) i2c.master: I2C software timeout[0m
+[1;31mE (10180) i2c.master: I2C software timeout[0m
+[0;33mW (10260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10270) i2c.master: I2C software timeout[0m
+[1;31mE (10290) i2c.master: I2C software timeout[0m
+[0;33mW (10290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10290) i2c.master: I2C software timeout[0m
+[0;33mW (10290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10310) i2c.master: I2C software timeout[0m
+[0;33mW (10310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (10320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (10320) i2c.master: I2C software timeout[0m
+[0;33mW (11270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11270) i2c.master: I2C software timeout[0m
+[0;33mW (11290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11290) i2c.master: I2C software timeout[0m
+[1;31mE (11290) i2c.master: I2C software timeout[0m
+[0;33mW (11300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (11300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (11310) i2c.master: I2C software timeout[0m
+[1;31mE (11310) i2c.master: I2C software timeout[0m
+[0;33mW (12260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12270) i2c.master: I2C software timeout[0m
+[0;33mW (12290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12290) i2c.master: I2C software timeout[0m
+[1;31mE (12290) i2c.master: I2C software timeout[0m
+[0;33mW (12290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (12300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (12310) i2c.master: I2C software timeout[0m
+[1;31mE (12310) i2c.master: I2C software timeout[0m
+[0;33mW (13260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13270) i2c.master: I2C software timeout[0m
+[0;33mW (13290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13290) i2c.master: I2C software timeout[0m
+[1;31mE (13290) i2c.master: I2C software timeout[0m
+[0;33mW (13290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (13300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (13310) i2c.master: I2C software timeout[0m
+[1;31mE (13310) i2c.master: I2C software timeout[0m
+[0;33mW (14260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14270) i2c.master: I2C software timeout[0m
+[0;33mW (14290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14290) i2c.master: I2C software timeout[0m
+[1;31mE (14290) i2c.master: I2C software timeout[0m
+[0;33mW (14290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (14300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (14310) i2c.master: I2C software timeout[0m
+[1;31mE (14310) i2c.master: I2C software timeout[0m
+[0;33mW (15270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15280) i2c.master: I2C software timeout[0m
+[0;33mW (15300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15300) i2c.master: I2C software timeout[0m
+[1;31mE (15300) i2c.master: I2C software timeout[0m
+[0;33mW (15300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (15310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (15320) i2c.master: I2C software timeout[0m
+[1;31mE (15320) i2c.master: I2C software timeout[0m
+[0;33mW (16280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16280) i2c.master: I2C software timeout[0m
+[0;33mW (16300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16300) i2c.master: I2C software timeout[0m
+[1;31mE (16300) i2c.master: I2C software timeout[0m
+[0;33mW (16310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (16310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (16320) i2c.master: I2C software timeout[0m
+[1;31mE (16320) i2c.master: I2C software timeout[0m
+[0;33mW (17260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17270) i2c.master: I2C software timeout[0m
+[0;33mW (17290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17290) i2c.master: I2C software timeout[0m
+[1;31mE (17290) i2c.master: I2C software timeout[0m
+[0;33mW (17290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (17300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (17310) i2c.master: I2C software timeout[0m
+[1;31mE (17310) i2c.master: I2C software timeout[0m
+[0;33mW (18270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18270) i2c.master: I2C software timeout[0m
+[0;33mW (18290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18290) i2c.master: I2C software timeout[0m
+[1;31mE (18290) i2c.master: I2C software timeout[0m
+[0;33mW (18300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (18300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (18310) i2c.master: I2C software timeout[0m
+[1;31mE (18310) i2c.master: I2C software timeout[0m
+[0;33mW (19260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19270) i2c.master: I2C software timeout[0m
+[0;33mW (19290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19290) i2c.master: I2C software timeout[0m
+[1;31mE (19290) i2c.master: I2C software timeout[0m
+[0;33mW (19290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (19300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (19310) i2c.master: I2C software timeout[0m
+[1;31mE (19310) i2c.master: I2C software timeout[0m
+[0;33mW (20270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20270) i2c.master: I2C software timeout[0m
+[0;33mW (20290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20290) i2c.master: I2C software timeout[0m
+[1;31mE (20290) i2c.master: I2C software timeout[0m
+[0;33mW (20290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (20300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (20310) i2c.master: I2C software timeout[0m
+[1;31mE (20310) i2c.master: I2C software timeout[0m
+[0;33mW (21260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21270) i2c.master: I2C software timeout[0m
+[0;33mW (21290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21290) i2c.master: I2C software timeout[0m
+[1;31mE (21290) i2c.master: I2C software timeout[0m
+[0;33mW (21290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (21300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (21310) i2c.master: I2C software timeout[0m
+[1;31mE (21310) i2c.master: I2C software timeout[0m
+[0;33mW (22270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22270) i2c.master: I2C software timeout[0m
+[0;33mW (22290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22290) i2c.master: I2C software timeout[0m
+[1;31mE (22290) i2c.master: I2C software timeout[0m
+[0;33mW (22300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (22300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (22310) i2c.master: I2C software timeout[0m
+[1;31mE (22310) i2c.master: I2C software timeout[0m
+[0;33mW (23260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23270) i2c.master: I2C software timeout[0m
+[0;33mW (23290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23290) i2c.master: I2C software timeout[0m
+[1;31mE (23290) i2c.master: I2C software timeout[0m
+[0;33mW (23290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (23300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (23310) i2c.master: I2C software timeout[0m
+[1;31mE (23310) i2c.master: I2C software timeout[0m
+[0;33mW (24260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24270) i2c.master: I2C software timeout[0m
+[0;33mW (24290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24290) i2c.master: I2C software timeout[0m
+[1;31mE (24290) i2c.master: I2C software timeout[0m
+[0;33mW (24290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (24300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (24310) i2c.master: I2C software timeout[0m
+[1;31mE (24310) i2c.master: I2C software timeout[0m
+[0;33mW (25260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25270) i2c.master: I2C software timeout[0m
+[0;33mW (25290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25290) i2c.master: I2C software timeout[0m
+[1;31mE (25290) i2c.master: I2C software timeout[0m
+[0;33mW (25290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (25300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (25310) i2c.master: I2C software timeout[0m
+[1;31mE (25310) i2c.master: I2C software timeout[0m
+[0;33mW (26260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26260) i2c.master: I2C software timeout[0m
+[0;33mW (26290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26290) i2c.master: I2C software timeout[0m
+[1;31mE (26290) i2c.master: I2C software timeout[0m
+[0;33mW (26290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (26300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (26310) i2c.master: I2C software timeout[0m
+[1;31mE (26310) i2c.master: I2C software timeout[0m
+[0;33mW (27270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27270) i2c.master: I2C software timeout[0m
+[0;33mW (27300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27300) i2c.master: I2C software timeout[0m
+[1;31mE (27300) i2c.master: I2C software timeout[0m
+[0;33mW (27300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (27310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (27320) i2c.master: I2C software timeout[0m
+[1;31mE (27320) i2c.master: I2C software timeout[0m
+[0;33mW (28260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28270) i2c.master: I2C software timeout[0m
+[0;33mW (28290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28290) i2c.master: I2C software timeout[0m
+[1;31mE (28290) i2c.master: I2C software timeout[0m
+[0;33mW (28290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (28300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (28310) i2c.master: I2C software timeout[0m
+[1;31mE (28310) i2c.master: I2C software timeout[0m
+[0;33mW (29260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29270) i2c.master: I2C software timeout[0m
+[0;33mW (29290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29290) i2c.master: I2C software timeout[0m
+[1;31mE (29290) i2c.master: I2C software timeout[0m
+[0;33mW (29290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (29300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (29310) i2c.master: I2C software timeout[0m
+[1;31mE (29310) i2c.master: I2C software timeout[0m
+[0;33mW (30270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30270) i2c.master: I2C software timeout[0m
+[0;33mW (30290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30290) i2c.master: I2C software timeout[0m
+[1;31mE (30290) i2c.master: I2C software timeout[0m
+[0;33mW (30290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (30300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (30310) i2c.master: I2C software timeout[0m
+[1;31mE (30310) i2c.master: I2C software timeout[0m
+[0;33mW (31260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31270) i2c.master: I2C software timeout[0m
+[0;33mW (31290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31290) i2c.master: I2C software timeout[0m
+[1;31mE (31290) i2c.master: I2C software timeout[0m
+[0;33mW (31290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (31300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (31310) i2c.master: I2C software timeout[0m
+[1;31mE (31310) i2c.master: I2C software timeout[0m
+[0;33mW (32270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32270) i2c.master: I2C software timeout[0m
+[0;33mW (32300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32300) i2c.master: I2C software timeout[0m
+[1;31mE (32300) i2c.master: I2C software timeout[0m
+[0;33mW (32300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (32310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (32320) i2c.master: I2C software timeout[0m
+[1;31mE (32320) i2c.master: I2C software timeout[0m
+[0;33mW (33260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33270) i2c.master: I2C software timeout[0m
+[0;33mW (33290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33290) i2c.master: I2C software timeout[0m
+[1;31mE (33290) i2c.master: I2C software timeout[0m
+[0;33mW (33290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (33300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (33310) i2c.master: I2C software timeout[0m
+[1;31mE (33310) i2c.master: I2C software timeout[0m
+[0;33mW (34260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34270) i2c.master: I2C software timeout[0m
+[0;33mW (34290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34290) i2c.master: I2C software timeout[0m
+[1;31mE (34290) i2c.master: I2C software timeout[0m
+[0;33mW (34290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (34300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (34310) i2c.master: I2C software timeout[0m
+[1;31mE (34310) i2c.master: I2C software timeout[0m
+[0;33mW (35270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (35270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (35270) i2c.master: I2C software timeout[0m
+[0;33mW (35290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (35290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (35290) i2c.master: I2C software timeout[0m
+[1;31mE (35290) i2c.master: I2C software timeout[0m
+[0;33mW (35290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (35300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (35310) i2c.master: I2C software timeout[0m
+[1;31mE (35310) i2c.master: I2C software timeout[0m
+[0;33mW (36270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36270) i2c.master: I2C software timeout[0m
+[0;33mW (36300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36300) i2c.master: I2C software timeout[0m
+[1;31mE (36300) i2c.master: I2C software timeout[0m
+[0;33mW (36300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (36310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (36320) i2c.master: I2C software timeout[0m
+[1;31mE (36320) i2c.master: I2C software timeout[0m
+[0;33mW (37260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37270) i2c.master: I2C software timeout[0m
+[0;33mW (37290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37290) i2c.master: I2C software timeout[0m
+[1;31mE (37290) i2c.master: I2C software timeout[0m
+[0;33mW (37290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (37300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (37310) i2c.master: I2C software timeout[0m
+[1;31mE (37310) i2c.master: I2C software timeout[0m
+[0;33mW (38260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38270) i2c.master: I2C software timeout[0m
+[0;33mW (38290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38290) i2c.master: I2C software timeout[0m
+[1;31mE (38290) i2c.master: I2C software timeout[0m
+[0;33mW (38290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (38300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (38310) i2c.master: I2C software timeout[0m
+[1;31mE (38310) i2c.master: I2C software timeout[0m
+[0;33mW (38320) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (38320) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (39260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39270) i2c.master: I2C software timeout[0m
+[0;33mW (39290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39290) i2c.master: I2C software timeout[0m
+[1;31mE (39290) i2c.master: I2C software timeout[0m
+[0;33mW (39290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (39300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (39310) i2c.master: I2C software timeout[0m
+[1;31mE (39310) i2c.master: I2C software timeout[0m
+[0;33mW (40270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40270) i2c.master: I2C software timeout[0m
+[0;33mW (40290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40290) i2c.master: I2C software timeout[0m
+[1;31mE (40290) i2c.master: I2C software timeout[0m
+[0;33mW (40300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (40300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (40310) i2c.master: I2C software timeout[0m
+[1;31mE (40310) i2c.master: I2C software timeout[0m
+[0;33mW (41270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41280) i2c.master: I2C software timeout[0m
+[0;33mW (41300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41300) i2c.master: I2C software timeout[0m
+[1;31mE (41300) i2c.master: I2C software timeout[0m
+[0;33mW (41300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (41310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (41320) i2c.master: I2C software timeout[0m
+[1;31mE (41320) i2c.master: I2C software timeout[0m
+[0;33mW (42260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42270) i2c.master: I2C software timeout[0m
+[0;33mW (42290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42290) i2c.master: I2C software timeout[0m
+[1;31mE (42290) i2c.master: I2C software timeout[0m
+[0;33mW (42290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (42300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (42310) i2c.master: I2C software timeout[0m
+[1;31mE (42310) i2c.master: I2C software timeout[0m
+[0;33mW (43260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43270) i2c.master: I2C software timeout[0m
+[0;33mW (43290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43290) i2c.master: I2C software timeout[0m
+[1;31mE (43290) i2c.master: I2C software timeout[0m
+[0;33mW (43290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (43300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (43310) i2c.master: I2C software timeout[0m
+[1;31mE (43310) i2c.master: I2C software timeout[0m
+[0;33mW (44270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44280) i2c.master: I2C software timeout[0m
+[0;33mW (44300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44300) i2c.master: I2C software timeout[0m
+[1;31mE (44300) i2c.master: I2C software timeout[0m
+[0;33mW (44300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (44310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (44320) i2c.master: I2C software timeout[0m
+[1;31mE (44320) i2c.master: I2C software timeout[0m
+[0;33mW (45270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45270) i2c.master: I2C software timeout[0m
+[0;33mW (45300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45300) i2c.master: I2C software timeout[0m
+[1;31mE (45300) i2c.master: I2C software timeout[0m
+[0;33mW (45300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (45310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (45320) i2c.master: I2C software timeout[0m
+[1;31mE (45320) i2c.master: I2C software timeout[0m
+[0;33mW (46270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46270) i2c.master: I2C software timeout[0m
+[0;33mW (46300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46300) i2c.master: I2C software timeout[0m
+[1;31mE (46300) i2c.master: I2C software timeout[0m
+[0;33mW (46300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46320) i2c.master: I2C software timeout[0m
+[0;33mW (46320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (46330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (46330) i2c.master: I2C software timeout[0m
+[0;33mW (47260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47270) i2c.master: I2C software timeout[0m
+[0;33mW (47290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47290) i2c.master: I2C software timeout[0m
+[1;31mE (47290) i2c.master: I2C software timeout[0m
+[0;33mW (47290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (47300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (47310) i2c.master: I2C software timeout[0m
+[1;31mE (47310) i2c.master: I2C software timeout[0m
+[0;33mW (48270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48270) i2c.master: I2C software timeout[0m
+[0;33mW (48290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48290) i2c.master: I2C software timeout[0m
+[1;31mE (48290) i2c.master: I2C software timeout[0m
+[0;33mW (48300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (48300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (48310) i2c.master: I2C software timeout[0m
+[1;31mE (48310) i2c.master: I2C software timeout[0m
+[0;33mW (49270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49280) i2c.master: I2C software timeout[0m
+[0;33mW (49300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49300) i2c.master: I2C software timeout[0m
+[1;31mE (49300) i2c.master: I2C software timeout[0m
+[0;33mW (49300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (49310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (49320) i2c.master: I2C software timeout[0m
+[1;31mE (49320) i2c.master: I2C software timeout[0m
+[0;33mW (50260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50270) i2c.master: I2C software timeout[0m
+[0;33mW (50290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50290) i2c.master: I2C software timeout[0m
+[1;31mE (50290) i2c.master: I2C software timeout[0m
+[0;33mW (50290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (50300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (50310) i2c.master: I2C software timeout[0m
+[1;31mE (50310) i2c.master: I2C software timeout[0m
+[0;33mW (51270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51270) i2c.master: I2C software timeout[0m
+[0;33mW (51300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51300) i2c.master: I2C software timeout[0m
+[1;31mE (51300) i2c.master: I2C software timeout[0m
+[0;33mW (51300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51320) i2c.master: I2C software timeout[0m
+[0;33mW (51320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (51330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (51330) i2c.master: I2C software timeout[0m
+[0;33mW (52270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52270) i2c.master: I2C software timeout[0m
+[0;33mW (52290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52290) i2c.master: I2C software timeout[0m
+[1;31mE (52290) i2c.master: I2C software timeout[0m
+[0;33mW (52300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (52300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (52310) i2c.master: I2C software timeout[0m
+[1;31mE (52310) i2c.master: I2C software timeout[0m
+[0;33mW (53270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53270) i2c.master: I2C software timeout[0m
+[0;33mW (53290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53290) i2c.master: I2C software timeout[0m
+[1;31mE (53290) i2c.master: I2C software timeout[0m
+[0;33mW (53290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (53300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (53310) i2c.master: I2C software timeout[0m
+[1;31mE (53310) i2c.master: I2C software timeout[0m
+[0;33mW (54260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54270) i2c.master: I2C software timeout[0m
+[0;33mW (54290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54290) i2c.master: I2C software timeout[0m
+[1;31mE (54290) i2c.master: I2C software timeout[0m
+[0;33mW (54290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (54300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (54310) i2c.master: I2C software timeout[0m
+[1;31mE (54310) i2c.master: I2C software timeout[0m
+[0;33mW (55270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55270) i2c.master: I2C software timeout[0m
+[0;33mW (55290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55290) i2c.master: I2C software timeout[0m
+[1;31mE (55290) i2c.master: I2C software timeout[0m
+[0;33mW (55300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (55300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (55310) i2c.master: I2C software timeout[0m
+[1;31mE (55310) i2c.master: I2C software timeout[0m
+[0;33mW (56270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56270) i2c.master: I2C software timeout[0m
+[0;33mW (56290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56290) i2c.master: I2C software timeout[0m
+[1;31mE (56290) i2c.master: I2C software timeout[0m
+[0;33mW (56290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (56300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (56310) i2c.master: I2C software timeout[0m
+[1;31mE (56310) i2c.master: I2C software timeout[0m
+[0;33mW (57270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57270) i2c.master: I2C software timeout[0m
+[0;33mW (57290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57290) i2c.master: I2C software timeout[0m
+[1;31mE (57290) i2c.master: I2C software timeout[0m
+[0;33mW (57290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (57300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (57310) i2c.master: I2C software timeout[0m
+[1;31mE (57310) i2c.master: I2C software timeout[0m
+[0;33mW (59260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59270) i2c.master: I2C software timeout[0m
+[0;33mW (59290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59290) i2c.master: I2C software timeout[0m
+[1;31mE (59290) i2c.master: I2C software timeout[0m
+[0;33mW (59290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (59300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (59310) i2c.master: I2C software timeout[0m
+[1;31mE (59310) i2c.master: I2C software timeout[0m
+[0;33mW (60260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60270) i2c.master: I2C software timeout[0m
+[0;33mW (60290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60290) i2c.master: I2C software timeout[0m
+[1;31mE (60290) i2c.master: I2C software timeout[0m
+[0;33mW (60290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (60300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (60310) i2c.master: I2C software timeout[0m
+[1;31mE (60310) i2c.master: I2C software timeout[0m
+[0;33mW (61260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61270) i2c.master: I2C software timeout[0m
+[0;33mW (61290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61290) i2c.master: I2C software timeout[0m
+[1;31mE (61290) i2c.master: I2C software timeout[0m
+[0;33mW (61290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (61300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (61310) i2c.master: I2C software timeout[0m
+[1;31mE (61310) i2c.master: I2C software timeout[0m
+[0;33mW (62260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62270) i2c.master: I2C software timeout[0m
+[0;33mW (62290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62290) i2c.master: I2C software timeout[0m
+[1;31mE (62290) i2c.master: I2C software timeout[0m
+[0;33mW (62290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (62300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (62310) i2c.master: I2C software timeout[0m
+[1;31mE (62310) i2c.master: I2C software timeout[0m
+[0;33mW (63260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63270) i2c.master: I2C software timeout[0m
+[0;33mW (63290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63290) i2c.master: I2C software timeout[0m
+[1;31mE (63290) i2c.master: I2C software timeout[0m
+[0;33mW (63290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (63300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (63310) i2c.master: I2C software timeout[0m
+[1;31mE (63310) i2c.master: I2C software timeout[0m
+[0;33mW (64260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64270) i2c.master: I2C software timeout[0m
+[0;33mW (64290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64290) i2c.master: I2C software timeout[0m
+[1;31mE (64290) i2c.master: I2C software timeout[0m
+[0;33mW (64290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (64300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (64310) i2c.master: I2C software timeout[0m
+[1;31mE (64310) i2c.master: I2C software timeout[0m
+[0;33mW (65270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65270) i2c.master: I2C software timeout[0m
+[0;33mW (65290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65290) i2c.master: I2C software timeout[0m
+[1;31mE (65290) i2c.master: I2C software timeout[0m
+[0;33mW (65290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (65300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (65310) i2c.master: I2C software timeout[0m
+[1;31mE (65310) i2c.master: I2C software timeout[0m
+[0;33mW (66270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66270) i2c.master: I2C software timeout[0m
+[0;33mW (66290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66290) i2c.master: I2C software timeout[0m
+[1;31mE (66290) i2c.master: I2C software timeout[0m
+[0;33mW (66290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (66300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (66310) i2c.master: I2C software timeout[0m
+[1;31mE (66310) i2c.master: I2C software timeout[0m
+[0;33mW (67260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67270) i2c.master: I2C software timeout[0m
+[0;33mW (67290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67290) i2c.master: I2C software timeout[0m
+[1;31mE (67290) i2c.master: I2C software timeout[0m
+[0;33mW (67290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (67300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (67310) i2c.master: I2C software timeout[0m
+[1;31mE (67310) i2c.master: I2C software timeout[0m
+[0;33mW (68260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68270) i2c.master: I2C software timeout[0m
+[0;33mW (68290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68290) i2c.master: I2C software timeout[0m
+[1;31mE (68290) i2c.master: I2C software timeout[0m
+[0;33mW (68290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (68300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (68310) i2c.master: I2C software timeout[0m
+[1;31mE (68310) i2c.master: I2C software timeout[0m
+[0;33mW (69260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69270) i2c.master: I2C software timeout[0m
+[0;33mW (69290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69290) i2c.master: I2C software timeout[0m
+[1;31mE (69290) i2c.master: I2C software timeout[0m
+[0;33mW (69290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (69300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (69310) i2c.master: I2C software timeout[0m
+[1;31mE (69310) i2c.master: I2C software timeout[0m
+[0;33mW (70260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70270) i2c.master: I2C software timeout[0m
+[0;33mW (70290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70290) i2c.master: I2C software timeout[0m
+[1;31mE (70290) i2c.master: I2C software timeout[0m
+[0;33mW (70290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (70300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (70310) i2c.master: I2C software timeout[0m
+[1;31mE (70310) i2c.master: I2C software timeout[0m
+[0;33mW (71270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71270) i2c.master: I2C software timeout[0m
+[0;33mW (71290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71290) i2c.master: I2C software timeout[0m
+[1;31mE (71290) i2c.master: I2C software timeout[0m
+[0;33mW (71300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (71300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (71310) i2c.master: I2C software timeout[0m
+[1;31mE (71310) i2c.master: I2C software timeout[0m
+[0;33mW (72270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72280) i2c.master: I2C software timeout[0m
+[0;33mW (72300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72300) i2c.master: I2C software timeout[0m
+[1;31mE (72300) i2c.master: I2C software timeout[0m
+[0;33mW (72300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (72310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (72320) i2c.master: I2C software timeout[0m
+[1;31mE (72320) i2c.master: I2C software timeout[0m
+[0;33mW (73260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73270) i2c.master: I2C software timeout[0m
+[0;33mW (73290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73290) i2c.master: I2C software timeout[0m
+[1;31mE (73290) i2c.master: I2C software timeout[0m
+[0;33mW (73290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (73300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (73310) i2c.master: I2C software timeout[0m
+[1;31mE (73310) i2c.master: I2C software timeout[0m
+[0;33mW (74270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74270) i2c.master: I2C software timeout[0m
+[0;33mW (74300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74300) i2c.master: I2C software timeout[0m
+[1;31mE (74300) i2c.master: I2C software timeout[0m
+[0;33mW (74300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (74310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (74320) i2c.master: I2C software timeout[0m
+[1;31mE (74320) i2c.master: I2C software timeout[0m
+[0;33mW (75270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75270) i2c.master: I2C software timeout[0m
+[0;33mW (75300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75300) i2c.master: I2C software timeout[0m
+[1;31mE (75300) i2c.master: I2C software timeout[0m
+[0;33mW (75300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (75310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (75320) i2c.master: I2C software timeout[0m
+[1;31mE (75320) i2c.master: I2C software timeout[0m
+[0;33mW (76260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76270) i2c.master: I2C software timeout[0m
+[0;33mW (76290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76290) i2c.master: I2C software timeout[0m
+[1;31mE (76290) i2c.master: I2C software timeout[0m
+[0;33mW (76290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (76300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (76310) i2c.master: I2C software timeout[0m
+[1;31mE (76310) i2c.master: I2C software timeout[0m
+[0;33mW (77270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77270) i2c.master: I2C software timeout[0m
+[0;33mW (77290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77290) i2c.master: I2C software timeout[0m
+[1;31mE (77290) i2c.master: I2C software timeout[0m
+[0;33mW (77290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (77300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (77310) i2c.master: I2C software timeout[0m
+[1;31mE (77310) i2c.master: I2C software timeout[0m
+[0;33mW (78270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78270) i2c.master: I2C software timeout[0m
+[0;33mW (78290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78290) i2c.master: I2C software timeout[0m
+[1;31mE (78290) i2c.master: I2C software timeout[0m
+[0;33mW (78290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (78300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (78310) i2c.master: I2C software timeout[0m
+[1;31mE (78310) i2c.master: I2C software timeout[0m
+[0;33mW (79270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79270) i2c.master: I2C software timeout[0m
+[0;33mW (79290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79290) i2c.master: I2C software timeout[0m
+[1;31mE (79290) i2c.master: I2C software timeout[0m
+[0;33mW (79290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (79300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (79310) i2c.master: I2C software timeout[0m
+[1;31mE (79310) i2c.master: I2C software timeout[0m
+[0;33mW (80260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80270) i2c.master: I2C software timeout[0m
+[0;33mW (80290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80290) i2c.master: I2C software timeout[0m
+[1;31mE (80290) i2c.master: I2C software timeout[0m
+[0;33mW (80290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (80300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (80310) i2c.master: I2C software timeout[0m
+[1;31mE (80310) i2c.master: I2C software timeout[0m
+[0;33mW (81270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81270) i2c.master: I2C software timeout[0m
+[0;33mW (81290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81290) i2c.master: I2C software timeout[0m
+[1;31mE (81290) i2c.master: I2C software timeout[0m
+[0;33mW (81290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (81300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (81310) i2c.master: I2C software timeout[0m
+[1;31mE (81310) i2c.master: I2C software timeout[0m
+[0;33mW (82260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82260) i2c.master: I2C software timeout[0m
+[0;33mW (82290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82290) i2c.master: I2C software timeout[0m
+[1;31mE (82290) i2c.master: I2C software timeout[0m
+[0;33mW (82290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (82300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (82310) i2c.master: I2C software timeout[0m
+[1;31mE (82310) i2c.master: I2C software timeout[0m
+[0;33mW (83270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83270) i2c.master: I2C software timeout[0m
+[0;33mW (83290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83290) i2c.master: I2C software timeout[0m
+[1;31mE (83290) i2c.master: I2C software timeout[0m
+[0;33mW (83290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (83300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (83310) i2c.master: I2C software timeout[0m
+[1;31mE (83310) i2c.master: I2C software timeout[0m
+[0;33mW (84260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84270) i2c.master: I2C software timeout[0m
+[0;33mW (84290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84290) i2c.master: I2C software timeout[0m
+[1;31mE (84290) i2c.master: I2C software timeout[0m
+[0;33mW (84290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (84300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (84310) i2c.master: I2C software timeout[0m
+[1;31mE (84310) i2c.master: I2C software timeout[0m
+[0;33mW (85260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85270) i2c.master: I2C software timeout[0m
+[0;33mW (85290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85290) i2c.master: I2C software timeout[0m
+[1;31mE (85290) i2c.master: I2C software timeout[0m
+[0;33mW (85290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (85300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (85310) i2c.master: I2C software timeout[0m
+[1;31mE (85310) i2c.master: I2C software timeout[0m
+[0;33mW (86270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86270) i2c.master: I2C software timeout[0m
+[0;33mW (86290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86290) i2c.master: I2C software timeout[0m
+[1;31mE (86290) i2c.master: I2C software timeout[0m
+[0;33mW (86300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (86300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (86310) i2c.master: I2C software timeout[0m
+[1;31mE (86310) i2c.master: I2C software timeout[0m
+[0;33mW (87260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87270) i2c.master: I2C software timeout[0m
+[0;33mW (87290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87290) i2c.master: I2C software timeout[0m
+[1;31mE (87290) i2c.master: I2C software timeout[0m
+[0;33mW (87290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87310) i2c.master: I2C software timeout[0m
+[0;33mW (87310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (87320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (87320) i2c.master: I2C software timeout[0m
+[0;33mW (88270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88270) i2c.master: I2C software timeout[0m
+[0;33mW (88290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88290) i2c.master: I2C software timeout[0m
+[1;31mE (88290) i2c.master: I2C software timeout[0m
+[0;33mW (88300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (88300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (88310) i2c.master: I2C software timeout[0m
+[1;31mE (88310) i2c.master: I2C software timeout[0m
+[0;33mW (89270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89280) i2c.master: I2C software timeout[0m
+[0;33mW (89300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89300) i2c.master: I2C software timeout[0m
+[1;31mE (89300) i2c.master: I2C software timeout[0m
+[0;33mW (89300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (89310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (89320) i2c.master: I2C software timeout[0m
+[1;31mE (89320) i2c.master: I2C software timeout[0m
+[0;33mW (90280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90280) i2c.master: I2C software timeout[0m
+[0;33mW (90300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90300) i2c.master: I2C software timeout[0m
+[1;31mE (90300) i2c.master: I2C software timeout[0m
+[0;33mW (90300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90320) i2c.master: I2C software timeout[0m
+[0;33mW (90320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (90330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (90330) i2c.master: I2C software timeout[0m
+[1;31mE (91270) i2c.master: I2C software timeout[0m
+[0;33mW (91290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91290) i2c.master: I2C software timeout[0m
+[1;31mE (91290) i2c.master: I2C software timeout[0m
+[0;33mW (91290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91310) i2c.master: I2C software timeout[0m
+[0;33mW (91310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (91320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (91320) i2c.master: I2C software timeout[0m
+[0;33mW (92270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92270) i2c.master: I2C software timeout[0m
+[0;33mW (92290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92290) i2c.master: I2C software timeout[0m
+[1;31mE (92290) i2c.master: I2C software timeout[0m
+[0;33mW (92300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (92300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (92310) i2c.master: I2C software timeout[0m
+[1;31mE (92310) i2c.master: I2C software timeout[0m
+[0;33mW (93260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93270) i2c.master: I2C software timeout[0m
+[0;33mW (93290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93290) i2c.master: I2C software timeout[0m
+[1;31mE (93290) i2c.master: I2C software timeout[0m
+[0;33mW (93290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (93300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (93310) i2c.master: I2C software timeout[0m
+[1;31mE (93310) i2c.master: I2C software timeout[0m
+[0;33mW (94270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94270) i2c.master: I2C software timeout[0m
+[0;33mW (94290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94290) i2c.master: I2C software timeout[0m
+[1;31mE (94290) i2c.master: I2C software timeout[0m
+[0;33mW (94300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94310) i2c.master: I2C software timeout[0m
+[0;33mW (94310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (94320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (94320) i2c.master: I2C software timeout[0m
+[1;31mE (95270) i2c.master: I2C software timeout[0m
+[0;33mW (95290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95290) i2c.master: I2C software timeout[0m
+[1;31mE (95290) i2c.master: I2C software timeout[0m
+[0;33mW (95290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95310) i2c.master: I2C software timeout[0m
+[0;33mW (95310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (95320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (95320) i2c.master: I2C software timeout[0m
+[0;33mW (96270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96270) i2c.master: I2C software timeout[0m
+[0;33mW (96290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96290) i2c.master: I2C software timeout[0m
+[1;31mE (96290) i2c.master: I2C software timeout[0m
+[0;33mW (96290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96310) i2c.master: I2C software timeout[0m
+[0;33mW (96310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (96320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (96320) i2c.master: I2C software timeout[0m
+[0;33mW (97260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97270) i2c.master: I2C software timeout[0m
+[0;33mW (97290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97290) i2c.master: I2C software timeout[0m
+[1;31mE (97290) i2c.master: I2C software timeout[0m
+[0;33mW (97290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97310) i2c.master: I2C software timeout[0m
+[0;33mW (97310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (97320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (97320) i2c.master: I2C software timeout[0m
+[0;33mW (98260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98270) i2c.master: I2C software timeout[0m
+[0;33mW (98290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98290) i2c.master: I2C software timeout[0m
+[1;31mE (98290) i2c.master: I2C software timeout[0m
+[0;33mW (98290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98310) i2c.master: I2C software timeout[0m
+[0;33mW (98310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (98320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (98320) i2c.master: I2C software timeout[0m
+[0;33mW (99260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99270) i2c.master: I2C software timeout[0m
+[0;33mW (99290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99290) i2c.master: I2C software timeout[0m
+[1;31mE (99290) i2c.master: I2C software timeout[0m
+[0;33mW (99290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99310) i2c.master: I2C software timeout[0m
+[0;33mW (99310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (99320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (99320) i2c.master: I2C software timeout[0m
+[0;33mW (100270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100270) i2c.master: I2C software timeout[0m
+[0;33mW (100290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100290) i2c.master: I2C software timeout[0m
+[1;31mE (100290) i2c.master: I2C software timeout[0m
+[0;33mW (100290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100310) i2c.master: I2C software timeout[0m
+[0;33mW (100310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (100320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (100320) i2c.master: I2C software timeout[0m
+[0;33mW (101270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101270) i2c.master: I2C software timeout[0m
+[0;33mW (101290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101290) i2c.master: I2C software timeout[0m
+[1;31mE (101290) i2c.master: I2C software timeout[0m
+[0;33mW (101290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (101300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (101310) i2c.master: I2C software timeout[0m
+[1;31mE (101310) i2c.master: I2C software timeout[0m
+[0;33mW (102260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102270) i2c.master: I2C software timeout[0m
+[0;33mW (102290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102290) i2c.master: I2C software timeout[0m
+[1;31mE (102290) i2c.master: I2C software timeout[0m
+[0;33mW (102290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (102300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (102310) i2c.master: I2C software timeout[0m
+[1;31mE (102310) i2c.master: I2C software timeout[0m
+[0;33mW (103270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103270) i2c.master: I2C software timeout[0m
+[0;33mW (103290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103290) i2c.master: I2C software timeout[0m
+[1;31mE (103290) i2c.master: I2C software timeout[0m
+[0;33mW (103290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103310) i2c.master: I2C software timeout[0m
+[0;33mW (103310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (103320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (103320) i2c.master: I2C software timeout[0m
+[0;33mW (104260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104270) i2c.master: I2C software timeout[0m
+[0;33mW (104290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104290) i2c.master: I2C software timeout[0m
+[1;31mE (104290) i2c.master: I2C software timeout[0m
+[0;33mW (104290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (104300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (104310) i2c.master: I2C software timeout[0m
+[1;31mE (104310) i2c.master: I2C software timeout[0m
+[0;33mW (105280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105290) i2c.master: I2C software timeout[0m
+[0;33mW (105310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105310) i2c.master: I2C software timeout[0m
+[1;31mE (105310) i2c.master: I2C software timeout[0m
+[0;33mW (105310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105330) i2c.master: I2C software timeout[0m
+[0;33mW (105330) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (105340) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (105340) i2c.master: I2C software timeout[0m
+[0;33mW (106260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106270) i2c.master: I2C software timeout[0m
+[0;33mW (106290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106290) i2c.master: I2C software timeout[0m
+[1;31mE (106290) i2c.master: I2C software timeout[0m
+[0;33mW (106290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (106300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (106310) i2c.master: I2C software timeout[0m
+[1;31mE (106310) i2c.master: I2C software timeout[0m
+[0;33mW (107260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107270) i2c.master: I2C software timeout[0m
+[0;33mW (107290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107290) i2c.master: I2C software timeout[0m
+[1;31mE (107290) i2c.master: I2C software timeout[0m
+[0;33mW (107290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (107300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (107310) i2c.master: I2C software timeout[0m
+[1;31mE (107310) i2c.master: I2C software timeout[0m
+[0;33mW (108260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108270) i2c.master: I2C software timeout[0m
+[0;33mW (108290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108290) i2c.master: I2C software timeout[0m
+[1;31mE (108290) i2c.master: I2C software timeout[0m
+[0;33mW (108290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (108300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (108310) i2c.master: I2C software timeout[0m
+[1;31mE (108310) i2c.master: I2C software timeout[0m
+[0;33mW (109270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109270) i2c.master: I2C software timeout[0m
+[0;33mW (109290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109290) i2c.master: I2C software timeout[0m
+[1;31mE (109290) i2c.master: I2C software timeout[0m
+[0;33mW (109300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (109300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (109310) i2c.master: I2C software timeout[0m
+[1;31mE (109310) i2c.master: I2C software timeout[0m
+[0;33mW (110100) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110100) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110100) i2c.master: I2C software timeout[0m
+[0;33mW (110120) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110120) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110120) i2c.master: I2C software timeout[0m
+[1;31mE (110120) i2c.master: I2C software timeout[0m
+[0;33mW (110130) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110130) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110140) i2c.master: I2C software timeout[0m
+[0;33mW (110140) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110150) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110160) i2c.master: I2C software timeout[0m
+[0;33mW (110270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110270) i2c.master: I2C software timeout[0m
+[0;33mW (110300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110300) i2c.master: I2C software timeout[0m
+[1;31mE (110300) i2c.master: I2C software timeout[0m
+[0;33mW (110300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110320) i2c.master: I2C software timeout[0m
+[0;33mW (110320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (110330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (110330) i2c.master: I2C software timeout[0m
+[0;33mW (111120) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111120) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111120) i2c.master: I2C software timeout[0m
+[0;33mW (111150) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111150) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111150) i2c.master: I2C software timeout[0m
+[1;31mE (111150) i2c.master: I2C software timeout[0m
+[0;33mW (111150) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111160) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111170) i2c.master: I2C software timeout[0m
+[1;31mE (111170) i2c.master: I2C software timeout[0m
+[0;33mW (111260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111270) i2c.master: I2C software timeout[0m
+[1;31mE (111290) i2c.master: I2C software timeout[0m
+[0;33mW (111290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111290) i2c.master: I2C software timeout[0m
+[0;33mW (111290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111310) i2c.master: I2C software timeout[0m
+[0;33mW (111310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111320) i2c.master: I2C software timeout[0m
+[0;33mW (111880) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111880) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111880) i2c.master: I2C software timeout[0m
+[0;33mW (111910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111910) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111910) i2c.master: I2C software timeout[0m
+[1;31mE (111910) i2c.master: I2C software timeout[0m
+[0;33mW (111910) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (111920) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (111930) i2c.master: I2C software timeout[0m
+[1;31mE (111930) i2c.master: I2C software timeout[0m
+[0;33mW (112260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112270) i2c.master: I2C software timeout[0m
+[0;33mW (112290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112290) i2c.master: I2C software timeout[0m
+[1;31mE (112290) i2c.master: I2C software timeout[0m
+[0;33mW (112290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112310) i2c.master: I2C software timeout[0m
+[0;33mW (112310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (112320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (112320) i2c.master: I2C software timeout[0m
+[0;33mW (113260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113270) i2c.master: I2C software timeout[0m
+[0;33mW (113290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113290) i2c.master: I2C software timeout[0m
+[1;31mE (113290) i2c.master: I2C software timeout[0m
+[0;33mW (113290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113310) i2c.master: I2C software timeout[0m
+[0;33mW (113310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (113320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (113320) i2c.master: I2C software timeout[0m
+[1;31mE (114270) i2c.master: I2C software timeout[0m
+[0;33mW (114290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114290) i2c.master: I2C software timeout[0m
+[1;31mE (114290) i2c.master: I2C software timeout[0m
+[0;33mW (114300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114310) i2c.master: I2C software timeout[0m
+[0;33mW (114310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (114320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (114320) i2c.master: I2C software timeout[0m
+[0;33mW (115260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115270) i2c.master: I2C software timeout[0m
+[0;33mW (115290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115290) i2c.master: I2C software timeout[0m
+[1;31mE (115290) i2c.master: I2C software timeout[0m
+[0;33mW (115290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115310) i2c.master: I2C software timeout[0m
+[0;33mW (115310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (115320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (115320) i2c.master: I2C software timeout[0m
+[0;33mW (116260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116270) i2c.master: I2C software timeout[0m
+[0;33mW (116290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116290) i2c.master: I2C software timeout[0m
+[1;31mE (116290) i2c.master: I2C software timeout[0m
+[0;33mW (116290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (116300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (116310) i2c.master: I2C software timeout[0m
+[1;31mE (116310) i2c.master: I2C software timeout[0m
+[0;33mW (117170) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117170) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117170) i2c.master: I2C software timeout[0m
+[0;33mW (117200) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117200) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117200) i2c.master: I2C software timeout[0m
+[1;31mE (117200) i2c.master: I2C software timeout[0m
+[0;33mW (117210) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117210) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117220) i2c.master: I2C software timeout[0m
+[1;31mE (117220) i2c.master: I2C software timeout[0m
+[0;33mW (117270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117270) i2c.master: I2C software timeout[0m
+[1;31mE (117290) i2c.master: I2C software timeout[0m
+[0;33mW (117290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117290) i2c.master: I2C software timeout[0m
+[0;33mW (117290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117310) i2c.master: I2C software timeout[0m
+[0;33mW (117310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (117320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (117320) i2c.master: I2C software timeout[0m
+[0;33mW (118260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118270) i2c.master: I2C software timeout[0m
+[0;33mW (118290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118290) i2c.master: I2C software timeout[0m
+[1;31mE (118290) i2c.master: I2C software timeout[0m
+[0;33mW (118290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118310) i2c.master: I2C software timeout[0m
+[0;33mW (118310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (118320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (118320) i2c.master: I2C software timeout[0m
+[0;33mW (119260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119270) i2c.master: I2C software timeout[0m
+[0;33mW (119290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119290) i2c.master: I2C software timeout[0m
+[1;31mE (119290) i2c.master: I2C software timeout[0m
+[0;33mW (119290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119310) i2c.master: I2C software timeout[0m
+[1;31mE (119310) i2c.master: I2C software timeout[0m
+[0;33mW (119700) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119700) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119700) i2c.master: I2C software timeout[0m
+[0;33mW (119730) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119730) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119730) i2c.master: I2C software timeout[0m
+[1;31mE (119730) i2c.master: I2C software timeout[0m
+[0;33mW (119740) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (119740) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (119750) i2c.master: I2C software timeout[0m
+[1;31mE (119750) i2c.master: I2C software timeout[0m
+[0;33mW (120270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120280) i2c.master: I2C software timeout[0m
+[0;33mW (120300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120300) i2c.master: I2C software timeout[0m
+[1;31mE (120300) i2c.master: I2C software timeout[0m
+[0;33mW (120300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (120310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (120320) i2c.master: I2C software timeout[0m
+[1;31mE (120320) i2c.master: I2C software timeout[0m
+[0;33mW (121270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (121270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (121270) i2c.master: I2C software timeout[0m
+[0;33mW (121290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (121290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (121290) i2c.master: I2C software timeout[0m
+[1;31mE (121290) i2c.master: I2C software timeout[0m
+[0;33mW (121300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (121300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (121310) i2c.master: I2C software timeout[0m
+[1;31mE (121310) i2c.master: I2C software timeout[0m
+[0;33mW (122260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (122260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (122270) i2c.master: I2C software timeout[0m
+[0;33mW (122290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (122290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (122290) i2c.master: I2C software timeout[0m
+[1;31mE (122290) i2c.master: I2C software timeout[0m
+[0;33mW (122290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (122300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (122310) i2c.master: I2C software timeout[0m
+[0;33mW (122310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (122320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (122320) i2c.master: I2C software timeout[0m
+[0;33mW (123260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (123260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (123270) i2c.master: I2C software timeout[0m
+[0;33mW (123290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (123290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (123290) i2c.master: I2C software timeout[0m
+[1;31mE (123290) i2c.master: I2C software timeout[0m
+[0;33mW (123290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (123300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (123310) i2c.master: I2C software timeout[0m
+[0;33mW (123310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (123320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (123320) i2c.master: I2C software timeout[0m
+[0;33mW (124260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (124260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (124270) i2c.master: I2C software timeout[0m
+[0;33mW (124290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (124290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (124290) i2c.master: I2C software timeout[0m
+[1;31mE (124290) i2c.master: I2C software timeout[0m
+[0;33mW (124290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (124300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (124310) i2c.master: I2C software timeout[0m
+[1;31mE (124310) i2c.master: I2C software timeout[0m
+[0;33mW (125260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (125260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (125270) i2c.master: I2C software timeout[0m
+[0;33mW (125290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (125290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (125290) i2c.master: I2C software timeout[0m
+[1;31mE (125290) i2c.master: I2C software timeout[0m
+[0;33mW (125290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (125300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (125310) i2c.master: I2C software timeout[0m
+[0;33mW (125310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (125320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (125320) i2c.master: I2C software timeout[0m
+[0;33mW (126260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (126270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (126270) i2c.master: I2C software timeout[0m
+[0;33mW (126290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (126290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (126290) i2c.master: I2C software timeout[0m
+[1;31mE (126290) i2c.master: I2C software timeout[0m
+[0;33mW (126290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (126300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (126310) i2c.master: I2C software timeout[0m
+[0;33mW (126310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (126320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (126320) i2c.master: I2C software timeout[0m
+[1;31mE (127280) i2c.master: I2C software timeout[0m
+[0;33mW (127300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (127300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (127300) i2c.master: I2C software timeout[0m
+[1;31mE (127300) i2c.master: I2C software timeout[0m
+[0;33mW (127310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (127310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (127320) i2c.master: I2C software timeout[0m
+[0;33mW (127320) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (127330) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (127330) i2c.master: I2C software timeout[0m
+[0;33mW (128270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (128270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (128270) i2c.master: I2C software timeout[0m
+[0;33mW (128290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (128290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (128290) i2c.master: I2C software timeout[0m
+[1;31mE (128290) i2c.master: I2C software timeout[0m
+[0;33mW (128290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (128300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (128310) i2c.master: I2C software timeout[0m
+[0;33mW (128310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (128320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (128320) i2c.master: I2C software timeout[0m
+[0;33mW (129260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (129260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (129270) i2c.master: I2C software timeout[0m
+[0;33mW (129290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (129290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (129290) i2c.master: I2C software timeout[0m
+[1;31mE (129290) i2c.master: I2C software timeout[0m
+[0;33mW (129290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (129300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (129310) i2c.master: I2C software timeout[0m
+[1;31mE (129310) i2c.master: I2C software timeout[0m
+[0;33mW (130270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (130270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (130270) i2c.master: I2C software timeout[0m
+[0;33mW (130300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (130300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (130300) i2c.master: I2C software timeout[0m
+[1;31mE (130300) i2c.master: I2C software timeout[0m
+[0;33mW (130300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (130310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (130320) i2c.master: I2C software timeout[0m
+[1;31mE (130320) i2c.master: I2C software timeout[0m
+[0;33mW (131270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (131270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (131270) i2c.master: I2C software timeout[0m
+[0;33mW (131290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (131290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (131290) i2c.master: I2C software timeout[0m
+[1;31mE (131290) i2c.master: I2C software timeout[0m
+[0;33mW (131300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (131300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (131310) i2c.master: I2C software timeout[0m
+[1;31mE (131310) i2c.master: I2C software timeout[0m
+[0;33mW (132260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (132260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (132270) i2c.master: I2C software timeout[0m
+[0;33mW (132290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (132290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (132290) i2c.master: I2C software timeout[0m
+[1;31mE (132290) i2c.master: I2C software timeout[0m
+[0;33mW (132290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (132300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (132310) i2c.master: I2C software timeout[0m
+[1;31mE (132310) i2c.master: I2C software timeout[0m
+[0;33mW (133260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (133270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (133270) i2c.master: I2C software timeout[0m
+[0;33mW (133290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (133290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (133290) i2c.master: I2C software timeout[0m
+[1;31mE (133290) i2c.master: I2C software timeout[0m
+[0;33mW (133290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (133300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (133310) i2c.master: I2C software timeout[0m
+[1;31mE (133310) i2c.master: I2C software timeout[0m
+[0;33mW (134270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (134270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (134270) i2c.master: I2C software timeout[0m
+[0;33mW (134290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (134290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (134290) i2c.master: I2C software timeout[0m
+[1;31mE (134290) i2c.master: I2C software timeout[0m
+[0;33mW (134300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (134300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (134310) i2c.master: I2C software timeout[0m
+[1;31mE (134310) i2c.master: I2C software timeout[0m
+[0;33mW (135260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (135260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (135270) i2c.master: I2C software timeout[0m
+[0;33mW (135290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (135290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (135290) i2c.master: I2C software timeout[0m
+[1;31mE (135290) i2c.master: I2C software timeout[0m
+[0;33mW (135290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (135300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (135310) i2c.master: I2C software timeout[0m
+[1;31mE (135310) i2c.master: I2C software timeout[0m
+[0;33mW (136260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (136260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (136270) i2c.master: I2C software timeout[0m
+[0;33mW (136290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (136290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (136290) i2c.master: I2C software timeout[0m
+[1;31mE (136290) i2c.master: I2C software timeout[0m
+[0;33mW (136290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (136300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (136310) i2c.master: I2C software timeout[0m
+[1;31mE (136310) i2c.master: I2C software timeout[0m
+[0;33mW (137260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (137260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (137270) i2c.master: I2C software timeout[0m
+[0;33mW (137290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (137290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (137290) i2c.master: I2C software timeout[0m
+[1;31mE (137290) i2c.master: I2C software timeout[0m
+[0;33mW (137290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (137300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (137310) i2c.master: I2C software timeout[0m
+[1;31mE (137310) i2c.master: I2C software timeout[0m
+[0;33mW (138260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (138260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (138270) i2c.master: I2C software timeout[0m
+[0;33mW (138290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (138290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (138290) i2c.master: I2C software timeout[0m
+[1;31mE (138290) i2c.master: I2C software timeout[0m
+[0;33mW (138290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (138300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (138310) i2c.master: I2C software timeout[0m
+[1;31mE (138310) i2c.master: I2C software timeout[0m
+[0;33mW (139260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (139260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (139270) i2c.master: I2C software timeout[0m
+[0;33mW (139290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (139290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (139290) i2c.master: I2C software timeout[0m
+[1;31mE (139290) i2c.master: I2C software timeout[0m
+[0;33mW (139290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (139300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (139310) i2c.master: I2C software timeout[0m
+[1;31mE (139310) i2c.master: I2C software timeout[0m
+[0;33mW (140260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (140260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (140270) i2c.master: I2C software timeout[0m
+[0;33mW (140290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (140290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (140290) i2c.master: I2C software timeout[0m
+[1;31mE (140290) i2c.master: I2C software timeout[0m
+[0;33mW (140290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (140300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (140310) i2c.master: I2C software timeout[0m
+[0;33mW (140310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (140320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (140320) i2c.master: I2C software timeout[0m
+[1;31mE (141270) i2c.master: I2C software timeout[0m
+[0;33mW (141290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (141290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (141290) i2c.master: I2C software timeout[0m
+[1;31mE (141290) i2c.master: I2C software timeout[0m
+[0;33mW (141300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (141300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (141310) i2c.master: I2C software timeout[0m
+[0;33mW (141310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (141320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (141320) i2c.master: I2C software timeout[0m
+[0;33mW (142270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (142270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (142270) i2c.master: I2C software timeout[0m
+[0;33mW (142290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (142290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (142290) i2c.master: I2C software timeout[0m
+[1;31mE (142290) i2c.master: I2C software timeout[0m
+[0;33mW (142300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (142300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (142310) i2c.master: I2C software timeout[0m
+[1;31mE (142310) i2c.master: I2C software timeout[0m
+[0;33mW (143260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (143260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (143270) i2c.master: I2C software timeout[0m
+[0;33mW (143290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (143290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (143290) i2c.master: I2C software timeout[0m
+[1;31mE (143290) i2c.master: I2C software timeout[0m
+[0;33mW (143290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (143300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (143310) i2c.master: I2C software timeout[0m
+[0;33mW (143310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (143320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (143320) i2c.master: I2C software timeout[0m
+[0;33mW (144270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (144270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (144270) i2c.master: I2C software timeout[0m
+[0;33mW (144300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (144300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (144300) i2c.master: I2C software timeout[0m
+[1;31mE (144300) i2c.master: I2C software timeout[0m
+[0;33mW (144300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (144310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (144320) i2c.master: I2C software timeout[0m
+[1;31mE (144320) i2c.master: I2C software timeout[0m
+[0;33mW (145260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (145260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (145270) i2c.master: I2C software timeout[0m
+[0;33mW (145290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (145290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (145290) i2c.master: I2C software timeout[0m
+[1;31mE (145290) i2c.master: I2C software timeout[0m
+[0;33mW (145290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (145300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (145310) i2c.master: I2C software timeout[0m
+[0;33mW (145310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (145320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (145320) i2c.master: I2C software timeout[0m
+[1;31mE (146260) i2c.master: I2C software timeout[0m
+[0;33mW (146280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (146280) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (146280) i2c.master: I2C software timeout[0m
+[1;31mE (146280) i2c.master: I2C software timeout[0m
+[0;33mW (146280) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (146290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (146300) i2c.master: I2C software timeout[0m
+[0;33mW (146300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (146310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (146310) i2c.master: I2C software timeout[0m
+[0;33mW (147260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (147260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (147270) i2c.master: I2C software timeout[0m
+[0;33mW (147290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (147290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (147290) i2c.master: I2C software timeout[0m
+[1;31mE (147290) i2c.master: I2C software timeout[0m
+[0;33mW (147290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (147300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (147310) i2c.master: I2C software timeout[0m
+[0;33mW (147310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (147320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (147320) i2c.master: I2C software timeout[0m
+[1;31mE (148270) i2c.master: I2C software timeout[0m
+[0;33mW (148290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (148290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (148290) i2c.master: I2C software timeout[0m
+[1;31mE (148290) i2c.master: I2C software timeout[0m
+[0;33mW (148300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (148300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (148310) i2c.master: I2C software timeout[0m
+[0;33mW (148310) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (148320) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (148320) i2c.master: I2C software timeout[0m
+[0;33mW (148710) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (148790) httpd_txrx: httpd_sock_err: error in recv : 104[0m
+[0;33mW (149270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (149270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (149270) i2c.master: I2C software timeout[0m
+[0;33mW (149290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (149290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (149290) i2c.master: I2C software timeout[0m
+[1;31mE (149290) i2c.master: I2C software timeout[0m
+[0;33mW (149290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (149300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (149310) i2c.master: I2C software timeout[0m
+[1;31mE (149310) i2c.master: I2C software timeout[0m
+[0;33mW (150270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (150270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (150270) i2c.master: I2C software timeout[0m
+[0;33mW (150290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (150290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (150290) i2c.master: I2C software timeout[0m
+[1;31mE (150290) i2c.master: I2C software timeout[0m
+[0;33mW (150300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (150300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (150310) i2c.master: I2C software timeout[0m
+[1;31mE (150310) i2c.master: I2C software timeout[0m
+[0;33mW (151260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (151260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (151270) i2c.master: I2C software timeout[0m
+[0;33mW (151290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (151290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (151290) i2c.master: I2C software timeout[0m
+[1;31mE (151290) i2c.master: I2C software timeout[0m
+[0;33mW (151290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (151300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (151310) i2c.master: I2C software timeout[0m
+[1;31mE (151310) i2c.master: I2C software timeout[0m
+[0;33mW (152260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (152260) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (152270) i2c.master: I2C software timeout[0m
+[0;33mW (152290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (152290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (152290) i2c.master: I2C software timeout[0m
+[1;31mE (152290) i2c.master: I2C software timeout[0m
+[0;33mW (152290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (152300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (152310) i2c.master: I2C software timeout[0m
+[1;31mE (152310) i2c.master: I2C software timeout[0m
+[0;33mW (153270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (153270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (153270) i2c.master: I2C software timeout[0m
+[0;33mW (153290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (153290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (153290) i2c.master: I2C software timeout[0m
+[1;31mE (153290) i2c.master: I2C software timeout[0m
+[0;33mW (153300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (153300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (153310) i2c.master: I2C software timeout[0m
+[1;31mE (153310) i2c.master: I2C software timeout[0m
+[0;33mW (154270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (154270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (154280) i2c.master: I2C software timeout[0m
+[0;33mW (154300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (154300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (154300) i2c.master: I2C software timeout[0m
+[1;31mE (154300) i2c.master: I2C software timeout[0m
+[0;33mW (154300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (154310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (154320) i2c.master: I2C software timeout[0m
+[1;31mE (154320) i2c.master: I2C software timeout[0m
+[0;33mW (155260) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (155270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (155270) i2c.master: I2C software timeout[0m
+[0;33mW (155290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (155290) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (155290) i2c.master: I2C software timeout[0m
+[1;31mE (155290) i2c.master: I2C software timeout[0m
+[0;33mW (155290) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (155300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (155310) i2c.master: I2C software timeout[0m
+[1;31mE (155310) i2c.master: I2C software timeout[0m
+[0;33mW (156270) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (156270) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (156270) i2c.master: I2C software timeout[0m
+[0;33mW (156300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (156300) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (156300) i2c.master: I2C software timeout[0m
+[1;31mE (156300) i2c.master: I2C software timeout[0m
+[0;33mW (156300) i2c.common: GPIO 21 is not usable, maybe conflict with others[0m
+[0;33mW (156310) i2c.common: GPIO 22 is not usable, maybe conflict with others[0m
+[1;31mE (156320) i2c.master: I2C software timeout[0m
+[1;31mE (156320) i2c.master: I2C software timeout[0m
